@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		<meta charset=utf-8>
+		<title>Lars Homestead</title>
+		<script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+		<script src="https://sdk.altvr.com/libs/altspace.js/2.8.1/altspace.min.js"></script>
+	
+
+	</head>
+	<body>
+	<a-scene altspace="fullspace:true;">
+	  <a-assets>
+    <img id="my-texture" src="textures/desert_sand_texture.jpg">
+  </a-assets>
+	
+<a-sphere position="-14.703 -1 4.42" radius="9.25" color="#EF2D5E" scale="0.271 0.552 0.272" material="" geometry=""></a-sphere>
+<a-entity position="16.281 -2.479 -32.063" geometry="primitive:torus" material="side:double" rotation="-90.012 -1.375 1.375" scale="23.202 19.49 6.998" id="bigdonut"></a-entity><a-entity position="-41.237 -2.479 -27.395" geometry="primitive:torus" material="side:double" rotation="-90.012 -1.375 1.375" scale="10.766 9.384 8.871" id="smalldonut"></a-entity>
+
+		<a-plane position="0 0 400" rotation="-90 0 0" width="4000" height="4000" color="#917127" material="src:#my-texture" geometry=""></a-plane>
+<a-entity position="-62.974 0 0.559" scale="4.007 1.97 3.773" geometry="primitive:cylinder"></a-entity>
+
+
+<a-entity position="5.598 1.108 0.559" scale="0.526 12.57 0.384" geometry="primitive:cylinder" id="evap_0"></a-entity><a-entity position="66.126 1.108 0.559" scale="0.526 12.57 0.384" geometry="primitive:cylinder" id="evap_0-2"></a-entity><a-entity position="66.126 1.108 93.208" scale="0.526 12.57 0.384" geometry="primitive:cylinder" id="evap_0-3"></a-entity><a-entity position="-162.722 1.108 93.208" scale="0.526 12.57 0.384" geometry="primitive:cylinder" id="evap_0-4"></a-entity><a-entity position="-162.722 1.108 -97.757" scale="0.526 12.57 0.384" geometry="primitive:cylinder" id="evap_0-5"></a-entity><a-entity position="-288.354 1.108 -97.757" scale="0.526 12.57 0.384" geometry="primitive:cylinder" id="evap_0-6"></a-entity>
+<a-entity position="5.598 1.108 0.559" scale="0.526 12.57 0.384" geometry="primitive:cylinder" id="evap_0"></a-entity>
+
+</a-scene>
+	</body>
+</html>
