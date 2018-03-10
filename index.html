@@ -31,11 +31,24 @@
 <a-entity position="-41.237 0.36 -27.395" geometry="primitive:torus;radiusTubular:0.03" color="#917127" material="repeat:10 10;src:#sand" rotation="-90.012 -1.375 1.375" scale="10.766 9.384 8.871" id="smalldonut"></a-entity>
 <a-entity position="-41.237 -7.113 -27.395" geometry="primitive:torus;radiusTubular:0.03" color="#917127" material="repeat:10 10;src:#sand" rotation="-90.012 -1.375 1.375" scale="10.766 9.384 130" id="smallcrater"></a-entity>
 
-<a-plane position="1909.329 0 1985.9430000000002" rotation="-90 0 0" width="4000" height="4000" material="repeat:2000 2000;src:#sand"></a-plane>
+
+<a-entity position="-10.862 0.28 -12.56" scale="36.799 27.684 1" geometry="primitive:triangle" material="repeat:10 10;src:#sand;side:double" id="tri_sand" rotation="-90 -74.083 76.719"></a-entity>
+<a-entity position="-23.13 0.28 -22.483" scale="36.799 27.684 1" geometry="primitive:triangle" material="repeat:10 10;side:double;src:#sand" id="tri_sand-2" rotation="-90 -74.083 76.719"></a-entity>
+<a-entity position="-25.4 0.28 -1.607" scale="36.799 27.684 1" geometry="primitive:triangle" material="repeat:10 10;side:double;src:#sand" id="tri_sand-3" rotation="-90.01166961505233 -31.569974511708363 0"></a-entity>
+<a-entity position="-4.212 0.28 -12.178" scale="36.799 27.684 1" geometry="primitive:triangle" material="repeat:10 10;side:double;src:#sand" id="tri_sand-4" rotation="-90.01166961505233 27.100903709687937 0"></a-entity>
+<a-entity position="-51.788 0.016 -2.74" scale="56.555 31.25 4.624" geometry="primitive:plane" material="repeat:10 10;side:double;src:#sand" id="square_sand" rotation="-90.012 0 0"></a-entity>
+<a-entity position="-51.788 0.016 -52.661" scale="56.555 31.25 4.624" geometry="primitive:plane" material="repeat:10 10;side:double;src:#sand" id="square_sand-2" rotation="-90.012 0 0"></a-entity>
+<a-entity position="-62.061 0.28 -22.483" scale="36.799 27.684 1" geometry="primitive:triangle" material="repeat:10 10;side:double;src:#sand" id="tri_sand-5" rotation="-90.01166961505233 14.438536437296746 0"></a-entity>
+<a-plane position="1909.329 0 2007.523000000001" rotation="-90 0 0" width="4000" height="4000" material="repeat:2000 2000;src:#sand"></a-plane>
 		<a-plane position="2050 0 -1970" rotation="-90 0 0" width="4000" height="4000" material="repeat:2000 2000;src:#sand" id="ground_-2" geometry=""></a-plane>
 <a-plane position="-1940.761 0 -2056.761" rotation="-90 0 0" width="4000" height="4000" material="repeat:2000 2000;src:#sand" id="ground_-3" geometry=""></a-plane>
 		<a-plane position="-2078.762 0 1912.853" rotation="-90 0 0" width="4000" height="4000" material="repeat:2000 2000;src:#sand" id="ground_-4" geometry=""></a-plane>
-<a-entity position="-62.974 0 0.559" scale="6.436 1.97 6.883" geometry="primitive:cylinder"></a-entity>
+
+		
+		
+		
+		
+		<a-entity position="-62.974 0 0.559" scale="6.436 1.97 6.883" geometry="primitive:cylinder"></a-entity>
 
  
 
@@ -81,6 +94,23 @@
 <a-entity position="0 11.854 0" scale="0.592 1.431 0.536" geometry="primitive:cylinder" material="src:#evap"></a-entity><a-entity position="0 0.246 0" scale="2.028 0.718 1.91" geometry="primitive:cylinder" material="src:#evap"></a-entity><a-entity position="0 -0.444 0" scale="1.394 0.718 1.313" geometry="primitive:cylinder" material="src:#evap"></a-entity><a-entity position="0 -1.644 0" scale="2.028 1.431 1.91" geometry="primitive:cylinder" material="src:#evap"></a-entity>
 <a-entity position="0.009 5.037 0" scale="3.467 0.424 3.336" geometry="" material="src:#evap"></a-entity><a-entity position="0.009 1.398 0" scale="2.088 2.097 2.54" geometry="" material="src:#evap"></a-entity>
 </a-entity>
+
+
+<!--sand crawler stuff-->
+
+ <a-entity position="0 70.64 0" scale="10.036 5.213 4.624" geometry="primitive:plane" material="color:#ff0080;side:double" id="BASE_RECTANGLE"></a-entity>
+ <a-entity position="0 10.863 0" scale="10.036 5.213 4.624" geometry="primitive:plane" material="color:#ff0080;side:double" id="BASE_RECTANGLE-2"></a-entity>
+ <a-entity position="0 70.073 3.484" scale="12.227 10.932 1" geometry="primitive:triangle" material="side:double" id="BASE_TRIANGLE"></a-entity>
+ <a-entity position="0 9.054 3.484" scale="12.227 10.932 1" geometry="primitive:triangle" material="side:double" id="BASE_TRIANGLE-2"></a-entity>
+  
+
+
+<!--end sand crawler-->
+
+
+
+
+
 <a-sky color="#b4cef7" radius="2500" material="" geometry=""></a-sky>
 
 </a-scene>
