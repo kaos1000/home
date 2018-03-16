@@ -14,70 +14,150 @@
 	
 
 <a-assets>
-    <img id="sand" src="textures/desert_sand_texture.jpg">
-<img id="evap" src="textures/evap.jpg">
-<img id="dome" src="textures/stained_plaster.jpg">
-<img id="ground" src="textures/ground_seamless_200.jpg">
-<img id="crater-1" src="textures/crater-1.png">
-  </a-assets>
+	<img id="sand" src="textures/desert_sand_texture.jpg">
+	<img id="evap" src="textures/evap.jpg">
+	<img id="dome" src="textures/stained_plaster.jpg">
+	<img id="ground" src="textures/ground_seamless_200.jpg">
+	<img id="crater-1" src="textures/crater-1.png">
+	<a-asset-item id="hut-obj" src="models/hut/hut.obj"></a-asset-item>
+    <a-asset-item id="hut-mtl" src="models/hut/hut.mtl"></a-asset-item>
+</a-assets>
   
- 
-<!--
-    <a-entity position="0 0 -6" n-portal="targetEntity: #second-floor"></a-entity>
--->	
+
 	
   
- <a-entity id="env_0" position="0 20.330 0">
-<a-entity id="stairs">
-<a-entity position="-10.757 -5.396 4.243" scale="3.296 3.951 9.801" geometry="" id="stair" n-box-collider="type: environment;"></a-entity>
-<a-entity position="-6.319 -9.457 3.484" scale="3.296 3.951 9.801" geometry="" id="stair-2" rotation="0 52.082 0" n-box-collider="type: environment;"></a-entity>
-<a-entity position="-6.062 -13.045 -2.244" scale="3.296 3.951 9.801" geometry="" id="stair-3" rotation="0 127.88417987319976 0" n-box-collider="type: environment;"></a-entity>
-<a-entity position="-10.757 -16.414 -5.668" scale="3.296 3.951 9.801" geometry="" id="stair-4" rotation="0 -10.886198107485642 0" n-box-collider="type: environment;"></a-entity>
+<a-entity id="env_0" position="0 20.330 0">
+<a-entity id="stairs" position="1.133 1.569 0">
+	
+<a-entity position="-15.204 -4.07 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-2" n-box-collider="type:environment"></a-entity>
+<a-entity position="-16.734 -4.55 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-3" n-box-collider="type:environment"></a-entity>
+<a-entity position="-18.312 -4.906 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-4" n-box-collider="type:environment"></a-entity>
+<a-entity position="-19.782 -5.249 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-5" n-box-collider="type:environment"></a-entity>
+<a-entity position="-21.235 -5.67 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-6" n-box-collider="type:environment"></a-entity>	
+
 </a-entity>
+<a-entity id="stairs-2" position="-17.916 -0.474 18.202" rotation="0 -90 0">
+	
+<a-entity position="-14.166 -4.07 4.243" scale="3.5 0.208 4.05" geometry="" id="stair-2" n-box-collider="type:environment"></a-entity>
+<a-entity position="-16.734 -4.55 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-3" n-box-collider="type:environment"></a-entity>
+<a-entity position="-18.312 -4.906 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-4" n-box-collider="type:environment"></a-entity>
+<a-entity position="-19.782 -5.249 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-5" n-box-collider="type:environment"></a-entity>
+<a-entity position="-21.235 -5.67 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-6" n-box-collider="type:environment"></a-entity>	
+
+</a-entity>
+<a-entity id="stairs-3" position="-17.916 -2.639 8.469" rotation="0 -90 0">
+	
+<a-entity position="-14.166 -4.07 4.243" scale="3.5 0.208 4.05" geometry="" id="stair-2" n-box-collider="type:environment"></a-entity>
+<a-entity position="-16.734 -4.55 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-3" n-box-collider="type:environment"></a-entity>
+<a-entity position="-18.312 -4.906 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-4" n-box-collider="type:environment"></a-entity>
+<a-entity position="-19.782 -5.249 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-5" n-box-collider="type:environment"></a-entity>
+<a-entity position="-21.235 -5.67 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-6" n-box-collider="type:environment"></a-entity>	
+
+</a-entity>
+<a-entity id="stairs-4" position="-17.916 -4.549 -1.002" rotation="0 -90 0">
+	
+<a-entity position="-14.166 -4.07 4.243" scale="3.5 0.208 4.05" geometry="" id="stair-2" n-box-collider="type:environment"></a-entity>
+<a-entity position="-16.734 -4.55 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-3" n-box-collider="type:environment"></a-entity>
+<a-entity position="-18.312 -4.906 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-4" n-box-collider="type:environment"></a-entity>
+<a-entity position="-19.782 -5.249 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-5" n-box-collider="type:environment"></a-entity>
+<a-entity position="-21.235 -5.67 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-6" n-box-collider="type:environment"></a-entity>	
+
+</a-entity>
+<a-entity id="stairs-5" position="-0.559 -6.039 -7.18" rotation="0 -90 0">
+	
+<a-entity position="-14.166 -4.07 4.71" scale="3.5 0.208 5.059" geometry="" id="stair-2" n-box-collider="type:environment"></a-entity>
+<a-entity position="-16.734 -4.55 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-3" n-box-collider="type:environment"></a-entity>
+<a-entity position="-18.312 -4.906 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-4" n-box-collider="type:environment"></a-entity>
+<a-entity position="-19.782 -5.249 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-5" n-box-collider="type:environment"></a-entity>
+<a-entity position="-21.235 -5.67 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-6" n-box-collider="type:environment"></a-entity>	
+
+</a-entity>
+<a-entity id="stairs-6" position="-0.559 -8.306 -16.239" rotation="0 -90 0">
+	
+<a-entity position="-14.166 -4.07 4.71" scale="3.5 0.208 5.059" geometry="" id="stair-2" n-box-collider="type:environment"></a-entity>
+<a-entity position="-16.734 -4.55 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-3" n-box-collider="type:environment"></a-entity>
+<a-entity position="-18.312 -4.906 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-4" n-box-collider="type:environment"></a-entity>
+<a-entity position="-19.782 -5.249 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-5" n-box-collider="type:environment"></a-entity>
+<a-entity position="-21.235 -5.67 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-6" n-box-collider="type:environment"></a-entity>	
+
+</a-entity>
+<a-entity id="stairs-7" position="-15.165 -10.145 -30.594" rotation="0 -169.99657781531525 0">
+	
+<a-entity position="-14.166 -4.07 4.71" scale="3.5 0.208 5.059" geometry="" id="stair-2" n-box-collider="type:environment"></a-entity>
+<a-entity position="-16.734 -4.55 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-3" n-box-collider="type:environment"></a-entity>
+<a-entity position="-18.312 -4.906 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-4" n-box-collider="type:environment"></a-entity>
+<a-entity position="-19.782 -5.249 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-5" n-box-collider="type:environment"></a-entity>
+<a-entity position="-21.235 -5.67 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-6" n-box-collider="type:environment"></a-entity>	
+
+</a-entity>
+<a-entity id="stairs-8" position="-5.821 -12.285 -30.594" rotation="0 -169.99657781531525 0">
+	
+<a-entity position="-14.166 -4.07 4.71" scale="3.5 0.208 5.059" geometry="" id="stair-2" n-box-collider="type:environment"></a-entity>
+<a-entity position="-16.734 -4.55 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-3" n-box-collider="type:environment"></a-entity>
+<a-entity position="-18.312 -4.906 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-4" n-box-collider="type:environment"></a-entity>
+<a-entity position="-19.782 -5.249 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-5" n-box-collider="type:environment"></a-entity>
+<a-entity position="-21.235 -5.67 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-6" n-box-collider="type:environment"></a-entity>	
+
+</a-entity>
+<a-entity id="stairs-9" position="3.547 -14.439 -30.594" rotation="0 -169.99657781531525 0">
+	
+<a-entity position="-14.166 -4.07 4.71" scale="3.5 0.208 5.059" geometry="" id="stair-2" n-box-collider="type:environment"></a-entity>
+<a-entity position="-16.734 -4.55 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-3" n-box-collider="type:environment"></a-entity>
+<a-entity position="-18.312 -4.906 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-4" n-box-collider="type:environment"></a-entity>
+<a-entity position="-19.782 -5.249 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-5" n-box-collider="type:environment"></a-entity>
+<a-entity position="-21.235 -5.67 4.243" scale="1.729 0.208 4.05" geometry="" id="stair-6" n-box-collider="type:environment"></a-entity>	
+
+</a-entity>
+<a-entity position="-19.271 -10.785 -17.007" scale="22.57 1 66.652" geometry="" id="main_floor" n-box-collider="type:environment"></a-entity>
+<a-entity obj-model="mtl:models/hut/hut.mtl;obj:models/hut/hut.obj" id="hut_model" position="-13.462 0 3.575" rotation="0 -55.11853989158519 0" scale="1.587 1.321 1.61"></a-entity>
+<!--
 <a-entity id="hut">	
-<a-sphere position="-14.703 -1 4.42" radius="9.25" scale="0.373 0.552 0.418" material="src:#dome" color="#e0e0e0"></a-sphere>
-<a-entity position="-14.734 0.253 4.425" scale="3.667 2.017 3.936" geometry="primitive:cylinder" material="src:#dome"></a-entity>
-<a-entity position="-14.749 0 4.312" scale="8.186 2.55 2.559" geometry="" material="src:#dome"></a-entity><a-entity position="-14.749 0 4.312" scale="8.186 2.55 2.559" geometry="" material="src:#dome" rotation="-0.5729577951308232 -92.13161345703638 0.2864788975654116"></a-entity>
-<a-entity position="-14.747 0.643 4.222" rotation="0 0 -90.01166961505233" scale="2.47 8.239 1" geometry="primitive:cylinder" material="src:#dome"></a-entity><a-entity position="-14.747 0.643 4.222" rotation="0 -90 -90.01166961505233" scale="2.47 8.239 1" geometry="primitive:cylinder" material="src:#dome"></a-entity>
+	<a-sphere position="-14.703 -1 4.42" radius="9.25" scale="0.373 0.552 0.418" material="src:#dome" color="#e0e0e0"></a-sphere>
+	<a-entity position="-14.734 0.253 4.425" scale="3.667 2.017 3.936" geometry="primitive:cylinder" material="src:#dome"></a-entity>
+	<a-entity position="-14.749 0 4.312" scale="8.186 2.55 2.559" geometry="" material="src:#dome"></a-entity>
+	<a-entity position="-14.749 0 4.312" scale="8.186 2.55 2.559" geometry="" material="src:#dome" rotation="-0.5729577951308232 -92.13161345703638 0.2864788975654116"></a-entity>
+	<a-entity position="-14.747 0.643 4.222" rotation="0 0 -90.01166961505233" scale="2.47 8.239 1" geometry="primitive:cylinder" material="src:#dome"></a-entity>
+	<a-entity position="-14.747 0.643 4.222" rotation="0 -90 -90.01166961505233" scale="2.47 8.239 1" geometry="primitive:cylinder" material="src:#dome"></a-entity>
 
 </a-entity>
-
+-->
 
 <a-entity position="16.281 -0.112 -32.063" geometry="primitive:torus;radiusTubular:0.04" color="#917127" material="repeat:10 10;src:#ground" rotation="-90.012 -1.375 1.375" scale="23.432 19.49 15.343" id="bigdonut"></a-entity>
+<a-entity position="-41.237 0.36 -27.395" geometry="primitive:torus;radiusTubular:0.03" color="#917127" material="repeat:10 10;src:#sand" rotation="-90.012 -1.375 1.375" scale="10.766 9.384 8.871" id="smalldonut"></a-entity>
+
 <a-entity id="crater_wall">
-<a-entity position="16.077 -10.948 -52.004" scale="11.835 20.732 4.624" geometry="primitive:plane" material="side:double;src:#ground;repeat:3 3;" id="main" n-box-collider="type: environment;"></a-entity>
-<a-entity position="16.077 -10.948 -13.038" scale="11.835 20.42 4.624" geometry="primitive:plane" material="side:double;src:#ground;repeat:3 3;" id="main-2" n-box-collider="type: environment;"></a-entity>
-<a-entity position="4.909 -10.948 -15.769" scale="11.835 20.732 4.624" geometry="primitive:plane" material="side:double;src:#ground;repeat:3 3;" id="main-6" rotation="0 -27.44467838676643 0" n-box-collider="type: environment;"></a-entity>
-<a-entity position="39.494 -10.948 -33.448" scale="11.835 20.732 4.624" geometry="primitive:plane" material="side:double;src:#ground;repeat:3 3;" id="main-3" rotation="0 -82.21944360127314 0" n-box-collider="type: environment;"></a-entity>
-<a-entity position="31.358 -10.948 -47.094" scale="11.835 20.732 4.624" geometry="primitive:plane" material="side:double;src:#ground;repeat:3 3;" id="main-5" rotation="0 -41.768623265037014 0" n-box-collider="type: environment;"></a-entity>
-<a-entity position="4.909 -10.948 -15.769" scale="11.835 20.732 4.624" geometry="primitive:plane" material="side:double;src:#ground;repeat:3 3;" id="main-6" rotation="0 -27.44467838676643 0" n-box-collider="type: environment;"></a-entity>
-<a-entity position="-6.897 -10.948 -33.448" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;" id="main-4" rotation="0 -94.76721931463815 0" n-box-collider="type: environment;"></a-entity>
-<a-entity position="27.251 -10.948 -15.899" scale="12.367 20.42 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;" id="main-8" n-box-collider="type:environment" rotation="0 27.2154952687141 0"></a-entity>
-<a-entity position="36.198 -11.069 -23.161" scale="12.587 20.42 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;" id="main-7" n-box-collider="type:environment" rotation="0 49.389 0"></a-entity>
-<a-entity position="-2.704 -10.948 -42.783" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;" id="main-10" rotation="0 -132.12406755716785 0" n-box-collider="type:environment"></a-entity>
-<a-entity position="5.533 -10.948 -49.266" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;" id="main-9" rotation="0 -150.17223810378877 0" n-box-collider="type:environment"></a-entity>
-<a-entity position="24.698 -10.948 -51.42" scale="6.404 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;" id="main-11" n-box-collider="type:environment" rotation="0 -11.459155902616466 0"></a-entity>
-<a-entity position="36.954 -10.948 -41.653" scale="6.404 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;" id="main-12" n-box-collider="type:environment" rotation="0 -55.462314568663686 0"></a-entity>
+	<a-entity position="16.077 -10.948 -52.004" scale="11.835 20.732 4.624" geometry="primitive:plane" material="side:double;src:#ground;repeat:3 3;" id="main" n-box-collider="type: environment;"></a-entity>
+	<a-entity position="16.077 -10.948 -13.038" scale="11.835 20.42 4.624" geometry="primitive:plane" material="side:double;src:#ground;repeat:3 3;" id="main-2" n-box-collider="type: environment;"></a-entity>
+	<a-entity position="4.909 -10.948 -15.769" scale="11.835 20.732 4.624" geometry="primitive:plane" material="side:double;src:#ground;repeat:3 3;" id="main-6" rotation="0 -27.44467838676643 0" n-box-collider="type: environment;"></a-entity>
+	<a-entity position="39.494 -10.948 -33.448" scale="11.835 20.732 4.624" geometry="primitive:plane" material="side:double;src:#ground;repeat:3 3;" id="main-3" rotation="0 -82.21944360127314 0" n-box-collider="type: environment;"></a-entity>
+	<a-entity position="31.358 -10.948 -47.094" scale="11.835 20.732 4.624" geometry="primitive:plane" material="side:double;src:#ground;repeat:3 3;" id="main-5" rotation="0 -41.768623265037014 0" n-box-collider="type: environment;"></a-entity>
+	<a-entity position="4.909 -10.948 -15.769" scale="11.835 20.732 4.624" geometry="primitive:plane" material="side:double;src:#ground;repeat:3 3;" id="main-6" rotation="0 -27.44467838676643 0" n-box-collider="type: environment;"></a-entity>
+	<a-entity position="-6.897 -10.948 -33.448" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;" id="main-4" rotation="0 -94.76721931463815 0" n-box-collider="type: environment;"></a-entity>
+	<a-entity position="27.251 -10.948 -15.899" scale="12.367 20.42 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;" id="main-8" n-box-collider="type:environment" rotation="0 27.2154952687141 0"></a-entity>
+	<a-entity position="36.198 -11.069 -23.161" scale="12.587 20.42 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;" id="main-7" n-box-collider="type:environment" rotation="0 49.389 0"></a-entity>
+	<a-entity position="-2.704 -10.948 -42.783" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;" id="main-10" rotation="0 -132.12406755716785 0" n-box-collider="type:environment"></a-entity>
+	<a-entity position="5.533 -10.948 -49.266" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;" id="main-9" rotation="0 -150.17223810378877 0" n-box-collider="type:environment"></a-entity>
+	<a-entity position="24.698 -10.948 -51.42" scale="6.404 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;" id="main-11" n-box-collider="type:environment" rotation="0 -11.459155902616466 0"></a-entity>
+	<a-entity position="36.954 -10.948 -41.653" scale="6.404 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;" id="main-12" n-box-collider="type:environment" rotation="0 -55.462314568663686 0"></a-entity>
 </a-entity>
 <a-entity id="crater_wall-2" position="-47.296 0 -14.188" scale="0.414 1 0.427">
 <a-entity position="16.077 -10.948 -52.004" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main" n-box-collider="type:environment"></a-entity>
-<a-entity position="16.077 -10.948 -13.038" scale="11.835 20.42 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-2" n-box-collider="type:environment"></a-entity>
-<a-entity position="4.909 -10.948 -15.769" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-6" rotation="0 -27.44467838676643 0" n-box-collider="type:environment"></a-entity>
-<a-entity position="39.494 -10.948 -33.448" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-3" rotation="0 -82.219 0" n-box-collider="type:environment"></a-entity>
-<a-entity position="31.358 -10.948 -47.094" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-5" rotation="0 -41.768623265037014 0" n-box-collider="type:environment"></a-entity>
-<a-entity position="4.909 -10.948 -15.769" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-6" rotation="0 -27.44467838676643 0" n-box-collider="type:environment"></a-entity>
-<a-entity position="-6.897 -10.948 -33.448" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-4" rotation="0 -94.76721931463815 0" n-box-collider="type:environment"></a-entity>
-<a-entity position="27.251 -10.948 -15.899" scale="12.367 20.42 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-8" n-box-collider="type:environment" rotation="0 27.2154952687141 0"></a-entity>
-<a-entity position="36.198 -11.069 -23.161" scale="12.587 20.42 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-7" n-box-collider="type:environment" rotation="0 49.389 0"></a-entity>
-<a-entity position="-2.704 -10.948 -42.783" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-10" rotation="0 -132.12406755716785 0" n-box-collider="type:environment"></a-entity>
-<a-entity position="5.533 -10.948 -49.266" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-9" rotation="0 -150.17223810378877 0" n-box-collider="type:environment"></a-entity>
-<a-entity position="24.698 -10.948 -51.42" scale="6.404 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-11" n-box-collider="type:environment" rotation="0 -11.459155902616466 0"></a-entity>
-<a-entity position="36.954 -10.948 -41.653" scale="6.404 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-12" n-box-collider="type:environment" rotation="0 -55.462314568663686 0"></a-entity>
+	<a-entity position="16.077 -10.948 -13.038" scale="11.835 20.42 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-2" n-box-collider="type:environment"></a-entity>
+	<a-entity position="4.909 -10.948 -15.769" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-6" rotation="0 -27.44467838676643 0" n-box-collider="type:environment"></a-entity>
+	<a-entity position="39.494 -10.948 -33.448" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-3" rotation="0 -82.219 0" n-box-collider="type:environment"></a-entity>
+	<a-entity position="31.358 -10.948 -47.094" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-5" rotation="0 -41.768623265037014 0" n-box-collider="type:environment"></a-entity>
+	<a-entity position="4.909 -10.948 -15.769" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-6" rotation="0 -27.44467838676643 0" n-box-collider="type:environment"></a-entity>
+	<a-entity position="-6.897 -10.948 -33.448" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-4" rotation="0 -94.76721931463815 0" n-box-collider="type:environment"></a-entity>
+	<a-entity position="27.251 -10.948 -15.899" scale="12.367 20.42 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-8" n-box-collider="type:environment" rotation="0 27.2154952687141 0"></a-entity>
+	<a-entity position="36.198 -11.069 -23.161" scale="12.587 20.42 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-7" n-box-collider="type:environment" rotation="0 49.389 0"></a-entity>
+	<a-entity position="-2.704 -10.948 -42.783" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-10" rotation="0 -132.12406755716785 0" n-box-collider="type:environment"></a-entity>
+	<a-entity position="5.533 -10.948 -49.266" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-9" rotation="0 -150.17223810378877 0" n-box-collider="type:environment"></a-entity>
+	<a-entity position="24.698 -10.948 -51.42" scale="6.404 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-11" n-box-collider="type:environment" rotation="0 -11.459155902616466 0"></a-entity>
+	<a-entity position="36.954 -10.948 -41.653" scale="6.404 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-12" n-box-collider="type:environment" rotation="0 -55.462314568663686 0"></a-entity>
 </a-entity>
 <!--
 <a-entity position="16.281 -10.655 -32.063" geometry="primitive:torus;radiusTubular:0.04" color="#917127" material="src:#crater-1" rotation="90.01166961505233 -179.2784940964346 -179.2784940964346" scale="23.432 19.49 130" id="bigcrater"></a-entity>
 -->
-<a-entity position="-41.237 0.36 -27.395" geometry="primitive:torus;radiusTubular:0.03" color="#917127" material="repeat:10 10;src:#sand" rotation="-90.012 -1.375 1.375" scale="10.766 9.384 8.871" id="smalldonut"></a-entity>
 <!--
 <a-entity position="-41.237 -7.113 -27.395" geometry="primitive:torus;radiusTubular:0.03" color="#917127" material="repeat:10 10;src:#sand" rotation="-90.012 -1.375 1.375" scale="10.766 9.384 130" id="smallcrater"></a-entity>
 -->
@@ -85,15 +165,15 @@
 <!---->
 <a-entity id="desert_floor" position="0 -19.204 0">
 
-<a-entity material="color:tan;" position="18.893 19.163 2.242" scale="52.669 1 31.538" geometry="" id="sand-2" n-box-collider="type: environment;"></a-entity>
-<a-entity material="color:tan" position="-29.955 19.163 -47.087" scale="44.989 1 19.184" geometry="" id="sand-3" n-box-collider="type:environment"></a-entity>
-<a-entity material="color:tan;" position="-12.355 19.163 11.511" scale="10.211 1 11.861" geometry="" id="sand-4" n-box-collider="type: environment;"></a-entity>
-<a-entity material="color:tan;" position="-35.883 19.163 0" scale="41.607 1 36.559" geometry="" id="sand" n-box-collider="type: environment;"></a-entity>
-<a-entity material="repeat:100 100;src:#sand;side:double" position="62.016 19.163 1346.6300000000003" scale="4144.694 1 2658.326" geometry="" id="sand-5" n-box-collider="type: environment;"></a-entity>
-<a-entity material="repeat:100 100;src:#sand;side:double" position="62.016 19.163 -1380.5559999999996" scale="4144.694 1 2658.326" geometry="" id="sand-6" n-box-collider="type: environment;"></a-entity>
-<a-entity material="repeat:100 3;side:double;src:#sand;" position="-1106.886 19.163 -24.414" scale="2110.044 1 113.192" geometry="" id="sand-8" n-box-collider="type: environment;"></a-entity>
-<a-entity material="repeat:100 3;side:double;src:#sand;" position="1095.0369999999998 19.163 -24.414" scale="2110.044 1 113.192" geometry="" id="sand-9" n-box-collider="type: environment;"></a-entity>
-<a-entity material="color:tan" position="-18.163 19.163 -17.742" scale="24.483 1 40.788" geometry="" id="sand-7" n-box-collider="type:environment"></a-entity>
+	<a-entity material="color:tan;" position="18.893 19.163 2.242" scale="52.669 1 31.538" geometry="" id="sand-2" n-box-collider="type: environment;"></a-entity>
+	<a-entity material="color:tan" position="-29.955 19.163 -47.087" scale="44.989 1 19.184" geometry="" id="sand-3" n-box-collider="type:environment"></a-entity>
+	<a-entity material="color:tan;" position="-12.355 19.163 11.511" scale="10.211 1 11.861" geometry="" id="sand-4" n-box-collider="type: environment;"></a-entity>
+	<a-entity material="color:tan;" position="-35.883 19.163 0" scale="41.607 1 36.559" geometry="" id="sand" n-box-collider="type: environment;"></a-entity>
+	<a-entity material="repeat:100 100;src:#sand;side:double" position="62.016 19.163 1346.6300000000003" scale="4144.694 1 2658.326" geometry="" id="sand-5" n-box-collider="type: environment;"></a-entity>
+	<a-entity material="repeat:100 100;src:#sand;side:double" position="62.016 19.163 -1380.5559999999996" scale="4144.694 1 2658.326" geometry="" id="sand-6" n-box-collider="type: environment;"></a-entity>
+	<a-entity material="repeat:100 3;side:double;src:#sand;" position="-1106.886 19.163 -24.414" scale="2110.044 1 113.192" geometry="" id="sand-8" n-box-collider="type: environment;"></a-entity>
+	<a-entity material="repeat:100 3;side:double;src:#sand;" position="1095.0369999999998 19.163 -24.414" scale="2110.044 1 113.192" geometry="" id="sand-9" n-box-collider="type: environment;"></a-entity>
+	<a-entity material="color:tan" position="-18.163 19.163 -17.742" scale="24.483 1 40.788" geometry="" id="sand-7" n-box-collider="type:environment"></a-entity>
 
 </a-entity>
 
@@ -101,7 +181,7 @@
 		
 		
 		
-<a-entity material="color:#000000;" position="-62.974 0 0.559" scale="6.436 1.97 6.883" geometry="primitive:cylinder;" id="vent"></a-entity>
+<a-entity material="color:#000000" position="-62.974 0 -15.224" scale="6.436 1.97 6.883" geometry="primitive:cylinder" id="vent"></a-entity>
 
  
 
@@ -137,48 +217,48 @@
 </a-entity>
 
 <a-entity id="the_test-3" position="66.126 1.108 93.208"> 
-<a-entity position="0 6.586 0" scale="0.787 9.029 0.803" geometry="primitive:cylinder" material="src:#evap"></a-entity>
-<a-entity position="0.074 9.122 -0.428" scale="0.06 12.226 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
-<a-entity position="1.36 11.442 -1.319" scale="0.06 17.364 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
-<a-entity position="1.36 11.442 1.047" scale="0.06 17.364 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
-<a-entity position="-1.528 11.442 1.047" scale="0.06 17.364 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
-<a-entity position="-1.528 11.442 -1.585" scale="0.06 17.364 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
-<a-entity position="0 11.854 0" scale="0.592 1.431 0.536" geometry="primitive:cylinder" material="src:#evap"></a-entity>
-<a-entity position="0 0.246 0" scale="2.028 0.718 1.91" geometry="primitive:cylinder" material="src:#evap"></a-entity>
-<a-entity position="0 -0.444 0" scale="1.394 0.718 1.313" geometry="primitive:cylinder" material="src:#evap"></a-entity>
-<a-entity position="0 -1.644 0" scale="2.028 1.431 1.91" geometry="primitive:cylinder" material="src:#evap"></a-entity>
-<a-entity position="0.009 5.037 0" scale="3.467 0.424 3.336" geometry="" material="src:#evap"></a-entity>
-<a-entity position="0.009 1.398 0" scale="2.088 2.097 2.54" geometry="" material="src:#evap"></a-entity>
+	<a-entity position="0 6.586 0" scale="0.787 9.029 0.803" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="0.074 9.122 -0.428" scale="0.06 12.226 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="1.36 11.442 -1.319" scale="0.06 17.364 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="1.36 11.442 1.047" scale="0.06 17.364 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="-1.528 11.442 1.047" scale="0.06 17.364 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="-1.528 11.442 -1.585" scale="0.06 17.364 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="0 11.854 0" scale="0.592 1.431 0.536" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="0 0.246 0" scale="2.028 0.718 1.91" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="0 -0.444 0" scale="1.394 0.718 1.313" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="0 -1.644 0" scale="2.028 1.431 1.91" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="0.009 5.037 0" scale="3.467 0.424 3.336" geometry="" material="src:#evap"></a-entity>
+	<a-entity position="0.009 1.398 0" scale="2.088 2.097 2.54" geometry="" material="src:#evap"></a-entity>
 </a-entity>
 
 <a-entity id="the_test-4" position="-162.722 1.108 93.208"> 
-<a-entity position="0 6.586 0" scale="0.787 9.029 0.803" geometry="primitive:cylinder" material="src:#evap"></a-entity>
-<a-entity position="0.074 9.122 -0.428" scale="0.06 12.226 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
-<a-entity position="1.36 11.442 -1.319" scale="0.06 17.364 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
-<a-entity position="1.36 11.442 1.047" scale="0.06 17.364 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
-<a-entity position="-1.528 11.442 1.047" scale="0.06 17.364 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
-<a-entity position="-1.528 11.442 -1.585" scale="0.06 17.364 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
-<a-entity position="0 11.854 0" scale="0.592 1.431 0.536" geometry="primitive:cylinder" material="src:#evap"></a-entity>
-<a-entity position="0 0.246 0" scale="2.028 0.718 1.91" geometry="primitive:cylinder" material="src:#evap"></a-entity>
-<a-entity position="0 -0.444 0" scale="1.394 0.718 1.313" geometry="primitive:cylinder" material="src:#evap"></a-entity>
-<a-entity position="0 -1.644 0" scale="2.028 1.431 1.91" geometry="primitive:cylinder" material="src:#evap"></a-entity>
-<a-entity position="0.009 5.037 0" scale="3.467 0.424 3.336" geometry="" material="src:#evap"></a-entity>
-<a-entity position="0.009 1.398 0" scale="2.088 2.097 2.54" geometry="" material="src:#evap"></a-entity>
+	<a-entity position="0 6.586 0" scale="0.787 9.029 0.803" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="0.074 9.122 -0.428" scale="0.06 12.226 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="1.36 11.442 -1.319" scale="0.06 17.364 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="1.36 11.442 1.047" scale="0.06 17.364 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="-1.528 11.442 1.047" scale="0.06 17.364 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="-1.528 11.442 -1.585" scale="0.06 17.364 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="0 11.854 0" scale="0.592 1.431 0.536" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="0 0.246 0" scale="2.028 0.718 1.91" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="0 -0.444 0" scale="1.394 0.718 1.313" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="0 -1.644 0" scale="2.028 1.431 1.91" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="0.009 5.037 0" scale="3.467 0.424 3.336" geometry="" material="src:#evap"></a-entity>
+	<a-entity position="0.009 1.398 0" scale="2.088 2.097 2.54" geometry="" material="src:#evap"></a-entity>
 </a-entity>
 
 <a-entity id="the_test-5" position="-162.722 1.108 -97.757"> 
-<a-entity position="0 6.586 0" scale="0.787 9.029 0.803" geometry="primitive:cylinder" material="src:#evap"></a-entity>
-<a-entity position="0.074 9.122 -0.428" scale="0.06 12.226 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
-<a-entity position="1.36 11.442 -1.319" scale="0.06 17.364 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
-<a-entity position="1.36 11.442 1.047" scale="0.06 17.364 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
-<a-entity position="-1.528 11.442 1.047" scale="0.06 17.364 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
-<a-entity position="-1.528 11.442 -1.585" scale="0.06 17.364 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
-<a-entity position="0 11.854 0" scale="0.592 1.431 0.536" geometry="primitive:cylinder" material="src:#evap"></a-entity>
-<a-entity position="0 0.246 0" scale="2.028 0.718 1.91" geometry="primitive:cylinder" material="src:#evap"></a-entity>
-<a-entity position="0 -0.444 0" scale="1.394 0.718 1.313" geometry="primitive:cylinder" material="src:#evap"></a-entity>
-<a-entity position="0 -1.644 0" scale="2.028 1.431 1.91" geometry="primitive:cylinder" material="src:#evap"></a-entity>
-<a-entity position="0.009 5.037 0" scale="3.467 0.424 3.336" geometry="" material="src:#evap"></a-entity>
-<a-entity position="0.009 1.398 0" scale="2.088 2.097 2.54" geometry="" material="src:#evap"></a-entity>
+	<a-entity position="0 6.586 0" scale="0.787 9.029 0.803" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="0.074 9.122 -0.428" scale="0.06 12.226 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="1.36 11.442 -1.319" scale="0.06 17.364 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="1.36 11.442 1.047" scale="0.06 17.364 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="-1.528 11.442 1.047" scale="0.06 17.364 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="-1.528 11.442 -1.585" scale="0.06 17.364 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="0 11.854 0" scale="0.592 1.431 0.536" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="0 0.246 0" scale="2.028 0.718 1.91" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="0 -0.444 0" scale="1.394 0.718 1.313" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="0 -1.644 0" scale="2.028 1.431 1.91" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="0.009 5.037 0" scale="3.467 0.424 3.336" geometry="" material="src:#evap"></a-entity>
+	<a-entity position="0.009 1.398 0" scale="2.088 2.097 2.54" geometry="" material="src:#evap"></a-entity>
 </a-entity>
 
 <a-entity id="the_test-6" position="-288.354 1.108 -97.757"> 
@@ -198,22 +278,22 @@
 
 <!--inside crater-->
 <a-entity id="the_test-7" position="16.515 -19.484 -33.105" scale="0.223 0.788 0.356"> 
-<a-entity position="0 6.586 0" scale="0.787 9.029 0.803" geometry="primitive:cylinder" material="src:#evap"></a-entity><a-entity position="0.074 9.122 -0.428" scale="0.06 12.226 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity><a-entity position="1.36 11.442 -1.319" scale="0.06 17.364 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity><a-entity position="1.36 11.442 1.047" scale="0.06 17.364 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity><a-entity position="-1.528 11.442 1.047" scale="0.06 17.364 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity><a-entity position="-1.528 11.442 -1.585" scale="0.06 17.364 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
-<a-entity position="0 11.854 0" scale="0.592 1.431 0.536" geometry="primitive:cylinder" material="src:#evap"></a-entity><a-entity position="0 0.246 0" scale="2.028 0.718 1.91" geometry="primitive:cylinder" material="src:#evap"></a-entity><a-entity position="0 -0.444 0" scale="1.394 0.718 1.313" geometry="primitive:cylinder" material="src:#evap"></a-entity><a-entity position="0 -1.358 0" scale="2.028 1.431 1.91" geometry="primitive:cylinder" material="src:#evap"></a-entity>
-<a-entity position="0.009 5.037 0" scale="3.467 0.424 3.336" geometry="" material="src:#evap"></a-entity><a-entity position="0.009 1.398 0" scale="2.088 2.097 2.54" geometry="" material="src:#evap"></a-entity>
+	<a-entity position="0 6.586 0" scale="0.787 9.029 0.803" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="0.074 9.122 -0.428" scale="0.06 12.226 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="1.36 11.442 -1.319" scale="0.06 17.364 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="1.36 11.442 1.047" scale="0.06 17.364 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="-1.528 11.442 1.047" scale="0.06 17.364 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="-1.528 11.442 -1.585" scale="0.06 17.364 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="0 11.854 0" scale="0.592 1.431 0.536" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="0 0.246 0" scale="2.028 0.718 1.91" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="0 -0.444 0" scale="1.394 0.718 1.313" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="0 -1.358 0" scale="2.028 1.431 1.91" geometry="primitive:cylinder" material="src:#evap"></a-entity>
+	<a-entity position="0.009 5.037 0" scale="3.467 0.424 3.336" geometry="" material="src:#evap"></a-entity>
+	<a-entity position="0.009 1.398 0" scale="2.088 2.097 2.54" geometry="" material="src:#evap"></a-entity>
 </a-entity>
 
 
-<!--sand crawler stuff-->
-<!--
- <a-entity position="0 70.64 0" scale="10.036 5.213 4.624" geometry="primitive:plane" material="color:#ff0080;side:double" id="BASE_RECTANGLE"></a-entity>
- <a-entity position="0 10.863 0" scale="10.036 5.213 4.624" geometry="primitive:plane" material="color:#ff0080;side:double" id="BASE_RECTANGLE-2"></a-entity>
- <a-entity position="0 70.073 3.484" scale="12.227 10.932 1" geometry="primitive:triangle" material="side:double" id="BASE_TRIANGLE"></a-entity>
- <a-entity position="0 9.054 3.484" scale="12.227 10.932 1" geometry="primitive:triangle" material="side:double" id="BASE_TRIANGLE-2"></a-entity>
-  -->
 
-
-<!--end sand crawler-->
 
 
 
