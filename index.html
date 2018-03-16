@@ -30,9 +30,9 @@
 	
   
 <a-entity id="env_0" position="0 20.330 0">
-	<a-entity position="6.608 -15.239 0" rotation="-3.323155211758775 0.057295779513082325 -16.844959176846203" scale="32.277 1 2.088" geometry="" id="ramp" n-box-collider="type:environment"></a-entity>
-	<a-entity position="-13.089 -5.724 4.112" rotation="-2.0626480624709633 -2.635605857601787 35.75256641616337" scale="19.646 1 2.088" geometry="" id="ramp-2" n-box-collider="type:environment"></a-entity>
-<a-entity position="-19.271 -10.785 -17.007" scale="22.57 1 66.652" geometry="" id="main_floor" n-box-collider="type:environment" material="opacity:1;"></a-entity>
+	<a-entity position="6.608 -15.239 0" rotation="-3.323155211758775 0.057295779513082325 -16.844959176846203" scale="32.277 1 2.088" geometry="" id="ramp" material="side:double;src:#ground;repeat:3 3;opacity:1;" n-box-collider="type:environment"></a-entity>
+	<a-entity position="-13.089 -5.724 4.112" rotation="-2.0626480624709633 -2.635605857601787 35.75256641616337" scale="19.646 1 2.088" geometry="" id="ramp-2" material="side:double;src:#ground;repeat:3 3;opacity:1;"n-box-collider="type:environment;"></a-entity>
+<a-entity position="-19.271 -10.785 -17.007" scale="22.57 1 66.652" geometry="" id="main_floor" n-box-collider="type:environment" material="side:double;src:#ground;repeat:3 3;opacity:1;"></a-entity>
 <a-entity obj-model="mtl:models/hut/hut.mtl;obj:models/hut/hut.obj" id="hut_model" position="-13.462 0 3.575" rotation="0 -55.11853989158519 0" scale="1.587 1.321 1.61"></a-entity>
 <!--
 <a-entity id="hut">	
