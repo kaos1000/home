@@ -22,6 +22,7 @@
 	<img id="dome" src="textures/stained_plaster.jpg">
 	<img id="ground" src="textures/ground_seamless_200.jpg">
 	<img id="crater-1" src="textures/crater-1.png">
+	<img id="lid" src="textures/lid.png">
 	<a-asset-item id="hut-obj" src="models/hut/hut.obj"></a-asset-item>
     <a-asset-item id="hut-mtl" src="models/hut/hut.mtl"></a-asset-item>
 </a-assets>
@@ -90,16 +91,16 @@
 <!--begin desert floor--> 
 <!---->
 <a-entity id="desert_floor" position="0 -19.204 0">
-
-	<a-entity material="color:tan;" position="18.893 19.163 2.242" scale="52.669 1 31.538" geometry="" id="sand-2" n-box-collider="type: environment;"></a-entity>
-	<a-entity material="color:tan" position="-29.955 19.163 -47.087" scale="44.989 1 19.184" geometry="" id="sand-3" n-box-collider="type:environment"></a-entity>
-	<a-entity material="color:tan;" position="-12.355 19.163 11.511" scale="10.211 1 11.861" geometry="" id="sand-4" n-box-collider="type: environment;"></a-entity>
-	<a-entity material="color:tan;" position="-35.883 19.163 0" scale="41.607 1 36.559" geometry="" id="sand" n-box-collider="type: environment;"></a-entity>
+	<a-entity position="-5.74 18.846 -16.694" scale="92.326 70.031 44.335" geometry="primitive:plane" id="lid" material="side:double;src:#lid" rotation="-90 0 0" alpha-test></a-entity>
+	<a-entity material="color:tan;opacity:0;" position="18.893 19.163 2.242" scale="52.669 1 31.538" geometry="" id="sand-2" n-box-collider="type: environment;"></a-entity>
+	<a-entity material="color:tan;opacity:0;" position="-29.955 19.163 -47.087" scale="44.989 1 19.184" geometry="" id="sand-3" n-box-collider="type:environment"></a-entity>
+	<a-entity material="color:tan;opacity:0;" position="-12.355 19.163 11.511" scale="10.211 1 11.861" geometry="" id="sand-4" n-box-collider="type: environment;"></a-entity>
+	<a-entity material="color:tan;opacity:0;" position="-35.883 19.163 0" scale="41.607 1 36.559" geometry="" id="sand" n-box-collider="type: environment;"></a-entity>
 	<a-entity material="repeat:100 100;src:#sand;side:double" position="62.016 19.163 1346.6300000000003" scale="4144.694 1 2658.326" geometry="" id="sand-5" n-box-collider="type: environment;"></a-entity>
 	<a-entity material="repeat:100 100;src:#sand;side:double" position="62.016 19.163 -1380.5559999999996" scale="4144.694 1 2658.326" geometry="" id="sand-6" n-box-collider="type: environment;"></a-entity>
 	<a-entity material="repeat:100 3;side:double;src:#sand;" position="-1106.886 19.163 -24.414" scale="2110.044 1 113.192" geometry="" id="sand-8" n-box-collider="type: environment;"></a-entity>
 	<a-entity material="repeat:100 3;side:double;src:#sand;" position="1095.0369999999998 19.163 -24.414" scale="2110.044 1 113.192" geometry="" id="sand-9" n-box-collider="type: environment;"></a-entity>
-	<a-entity material="color:tan" position="-18.163 19.163 -17.742" scale="24.483 1 40.788" geometry="" id="sand-7" n-box-collider="type:environment"></a-entity>
+	<a-entity material="color:tan;opacity:0;" position="-18.163 19.163 -17.742" scale="24.483 1 40.788" geometry="" id="sand-7" n-box-collider="type:environment"></a-entity>
 
 </a-entity>
 
@@ -228,7 +229,17 @@
 <a-sky color="#b4cef7" radius="2500" material="" geometry=""></a-sky>
 </a-entity>
 </a-scene>
+<script>
+	AFRAME.registerComponent('alpha-test', {
+  dependencies: ['material'],
 
+  init: function () {
+    var material = this.el.getObject3D('mesh').material;
+    material.alphaTest = 0.5;
+    material.needsUpdate = true;
+  }
+});
+</script>
 
 
 	</body>
