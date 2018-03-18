@@ -24,17 +24,22 @@
 	<img id="crater-1" src="textures/crater-1.png">
 	<img id="lid" src="textures/lid.png">
 	<a-asset-item id="hut-obj" src="models/hut/hut.obj"></a-asset-item>
-    <a-asset-item id="hut-mtl" src="models/hut/hut.mtl"></a-asset-item>
+	<a-asset-item id="hut-mtl" src="models/hut/hut.mtl"></a-asset-item>
+
 </a-assets>
   
 
 	
   
 <a-entity id="env_0" position="-34.636 20.33 33.836">
-	<a-entity position="6.608 -15.239 0" rotation="-3.323155211758775 0.057295779513082325 -16.844959176846203" scale="32.277 1 2.088" geometry="" id="ramp" material="side:double;src:#ground;repeat:3 3;opacity:1;" n-box-collider="type:environment"></a-entity>
+	<a-entity position="17.099 -15.239 -36.312" rotation="0 0 -16.845" scale="32.277 1 2.088" geometry="" id="ramp" material="repeat:3 3;side:double;src:#ground" n-box-collider="type:environment"></a-entity>
 	<a-entity position="-13.089 -5.724 4.112" rotation="-2.0626480624709633 -2.635605857601787 35.75256641616337" scale="19.646 1 2.088" geometry="" id="ramp-2" material="side:double;src:#ground;repeat:3 3;opacity:1;"n-box-collider="type:environment;"></a-entity>
-<a-entity position="-19.271 -10.785 -17.007" scale="22.57 1 66.652" geometry="" id="main_floor" n-box-collider="type:environment" material="side:double;src:#ground;repeat:3 3;opacity:1;"></a-entity>
+	<a-entity position="-9.837 -10.785 -17.007" scale="22.57 1 66.652" geometry="" id="main_floor" n-box-collider="type:environment" material="repeat:3 3;side:double;src:#ground"></a-entity>
 <a-entity obj-model="mtl:models/hut/hut.mtl;obj:models/hut/hut.obj" id="hut_model" position="-13.462 0 3.575" rotation="0 -55.11853989158519 0" scale="1.587 1.321 1.61"></a-entity>
+
+
+
+<a-entity obj-model="mtl:models/lid/test.mtl;obj:models/lid/test.obj" id="lid2" position="-37.583 -0.53 -37.219" scale="2 1 2.3"></a-entity>
 <!--
 <a-entity id="hut">	
 	<a-sphere position="-14.703 -1 4.42" radius="9.25" scale="0.373 0.552 0.418" material="src:#dome" color="#e0e0e0"></a-sphere>
@@ -47,41 +52,42 @@
 </a-entity>
 -->
 <a-entity position="-40.4 -10.325 -28.62" scale="19.702 0.152 -1.415" geometry="" material="color:#000" id="bridge" n-box-collider="type: environment;"></a-entity>
+<!--
 <a-entity position="16.281 -0.112 -32.063" geometry="primitive:torus;radiusTubular:0.04" color="#917127" material="repeat:10 10;src:#ground" rotation="-90.012 -1.375 1.375" scale="23.432 19.49 15.343" id="bigdonut"></a-entity>
 <a-entity position="-41.237 0.36 -27.395" geometry="primitive:torus;radiusTubular:0.03" color="#917127" material="repeat:10 10;src:#sand" rotation="-90.012 -1.375 1.375" scale="10.766 9.384 8.871" id="smalldonut"></a-entity>
-
-<a-entity id="crater_wall" material="opacity:0;">
-	<a-entity position="16.077 -10.948 -52.004" scale="11.835 20.732 4.624" geometry="primitive:plane" material="side:double;src:#ground;repeat:3 3;opacity:1;" id="main" n-box-collider="type: environment;"></a-entity>
-	<a-entity position="16.077 -10.948 -13.038" scale="11.835 20.42 4.624" geometry="primitive:plane" material="side:double;src:#ground;repeat:3 3;opacity:1;" id="main-2" n-box-collider="type: environment;"></a-entity>
-	<a-entity position="4.909 -10.948 -15.769" scale="11.835 20.732 4.624" geometry="primitive:plane" material="side:double;src:#ground;repeat:3 3;opacity:1;" id="main-6" rotation="0 -27.44467838676643 0" n-box-collider="type: environment;"></a-entity>
-	<a-entity position="39.494 -10.948 -33.448" scale="11.835 20.732 4.624" geometry="primitive:plane" material="side:double;src:#ground;repeat:3 3;opacity:1;" id="main-3" rotation="0 -82.21944360127314 0" n-box-collider="type: environment;"></a-entity>
-	<a-entity position="31.358 -10.948 -47.094" scale="11.835 20.732 4.624" geometry="primitive:plane" material="side:double;src:#ground;repeat:3 3;opacity:1;" id="main-5" rotation="0 -41.768623265037014 0" n-box-collider="type: environment;"></a-entity>
-	<a-entity position="4.909 -10.948 -15.769" scale="11.835 20.732 4.624" geometry="primitive:plane" material="side:double;src:#ground;repeat:3 3;opacity:1;" id="main-6" rotation="0 -27.44467838676643 0" n-box-collider="type: environment;"></a-entity>
+-->
+<a-entity id="crater_wall" material="opacity:0" position="0 1.646 6.425" scale="1 1.11 1">
+	<a-entity position="16.077 -10.948 -52.004" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main" n-box-collider="type:environment"></a-entity>
+	<a-entity position="16.077 -10.948 -13.038" scale="11.835 20.42 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-2" n-box-collider="type:environment"></a-entity>
+	<a-entity position="4.909 -10.948 -15.769" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-6" rotation="0 -27.44467838676643 0" n-box-collider="type:environment"></a-entity>
+	<a-entity position="39.494 -10.948 -33.448" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-3" rotation="0 -82.21944360127314 0" n-box-collider="type:environment"></a-entity>
+	<a-entity position="31.358 -10.948 -47.094" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-5" rotation="0 -41.768623265037014 0" n-box-collider="type:environment"></a-entity>
+	<a-entity position="4.909 -10.948 -15.769" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-6" rotation="0 -27.44467838676643 0" n-box-collider="type:environment"></a-entity>
 	<!--
 	<a-entity position="-6.897 -10.948 -33.448" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;opacity:1;" id="main-4" rotation="0 -94.76721931463815 0" n-box-collider="type: environment;"></a-entity>
 	-->
-	<a-entity position="27.251 -10.948 -15.899" scale="12.367 20.42 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;opacity:1;" id="main-8" n-box-collider="type:environment" rotation="0 27.2154952687141 0"></a-entity>
-	<a-entity position="36.198 -11.069 -23.161" scale="12.587 20.42 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;opacity:1;" id="main-7" n-box-collider="type:environment" rotation="0 49.389 0"></a-entity>
-	<a-entity position="-2.704 -10.948 -42.783" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;opacity:1;" id="main-10" rotation="0 -132.12406755716785 0" n-box-collider="type:environment"></a-entity>
-	<a-entity position="5.533 -10.948 -49.266" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;opacity:1;" id="main-9" rotation="0 -150.17223810378877 0" n-box-collider="type:environment"></a-entity>
-	<a-entity position="24.698 -10.948 -51.42" scale="6.404 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;opacity:1;" id="main-11" n-box-collider="type:environment" rotation="0 -11.459155902616466 0"></a-entity>
-	<a-entity position="36.954 -10.948 -41.653" scale="6.404 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;opacity:1;" id="main-12" n-box-collider="type:environment" rotation="0 -55.462314568663686 0"></a-entity>
+	<a-entity position="27.251 -10.948 -15.899" scale="12.367 20.42 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-8" n-box-collider="type:environment" rotation="0 27.2154952687141 0"></a-entity>
+	<a-entity position="36.198 -11.069 -23.161" scale="12.587 20.42 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-7" n-box-collider="type:environment" rotation="0 49.389 0"></a-entity>
+	<a-entity position="-2.704 -10.948 -42.783" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-10" rotation="0 -132.12406755716785 0" n-box-collider="type:environment"></a-entity>
+	<a-entity position="5.533 -10.948 -49.266" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-9" rotation="0 -150.17223810378877 0" n-box-collider="type:environment"></a-entity>
+	<a-entity position="24.698 -10.948 -51.42" scale="6.404 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-11" n-box-collider="type:environment" rotation="0 -11.459155902616466 0"></a-entity>
+	<a-entity position="36.954 -10.948 -41.653" scale="6.404 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-12" n-box-collider="type:environment" rotation="0 -55.462314568663686 0"></a-entity>
 </a-entity>
-<a-entity id="crater_wall-2" position="-47.296 0 -14.188" scale="0.414 1 0.427" >
-<a-entity position="16.077 -10.948 -52.004" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;opacity:1;" id="main" n-box-collider="type:environment"></a-entity>
-	<a-entity position="16.077 -10.948 -13.038" scale="11.835 20.42 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;opacity:1;" id="main-2" n-box-collider="type:environment"></a-entity>
-	<a-entity position="4.909 -10.948 -15.769" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;opacity:1;" id="main-6" rotation="0 -27.44467838676643 0" n-box-collider="type:environment"></a-entity>
-	<a-entity position="39.494 -15.871 -33.448" scale="11.835 10.738 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;opacity:1;" id="main-3" rotation="0 -82.219 0" n-box-collider="type:environment"></a-entity>
-	<a-entity position="31.358 -10.948 -47.094" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;opacity:1;" id="main-5" rotation="0 -41.768623265037014 0" n-box-collider="type:environment"></a-entity>
-	<a-entity position="4.909 -10.948 -15.769" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;opacity:1;" id="main-6" rotation="0 -27.44467838676643 0" n-box-collider="type:environment"></a-entity>
-	<a-entity position="-6.897 -10.948 -33.448" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;opacity:1;" id="main-4" rotation="0 -94.76721931463815 0" n-box-collider="type:environment"></a-entity>
-	<a-entity position="27.251 -10.948 -15.899" scale="12.367 20.42 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;opacity:1;" id="main-8" n-box-collider="type:environment" rotation="0 27.2154952687141 0"></a-entity>
-	<a-entity position="36.198 -11.069 -23.161" scale="12.587 20.42 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;opacity:1;" id="main-7" n-box-collider="type:environment" rotation="0 49.389 0"></a-entity>
-	<a-entity position="-2.704 -10.948 -42.783" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;opacity:1;" id="main-10" rotation="0 -132.12406755716785 0" n-box-collider="type:environment"></a-entity>
-	<a-entity position="5.533 -10.948 -49.266" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;opacity:1;" id="main-9" rotation="0 -150.17223810378877 0" n-box-collider="type:environment"></a-entity>
-	<a-entity position="24.698 -10.948 -51.42" scale="6.404 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;opacity:1;" id="main-11" n-box-collider="type:environment" rotation="0 -11.459155902616466 0"></a-entity>
-	<a-entity position="36.954 -10.948 -41.653" scale="6.404 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground;opacity:1;" id="main-12" n-box-collider="type:environment" rotation="0 -55.462314568663686 0"></a-entity>
-</a-entity>
+<a-entity id="crater_wall-2" position="-37.087 1.35 -0.323" scale="0.6 1.11 0.7">
+	<a-entity position="16.077 -10.948 -52.004" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main" n-box-collider="type:environment"></a-entity>
+		<a-entity position="16.077 -10.948 -13.038" scale="11.835 20.42 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-2" n-box-collider="type:environment"></a-entity>
+		<a-entity position="4.909 -10.948 -15.769" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-6" rotation="0 -27.44467838676643 0" n-box-collider="type:environment"></a-entity>
+		<a-entity position="39.494 -15.871 -33.448" scale="11.835 10.738 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-3" rotation="0 -82.219 0" n-box-collider="type:environment"></a-entity>
+		<a-entity position="31.358 -10.948 -47.094" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-5" rotation="0 -41.768623265037014 0" n-box-collider="type:environment"></a-entity>
+		<a-entity position="4.909 -10.948 -15.769" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-6" rotation="0 -27.44467838676643 0" n-box-collider="type:environment"></a-entity>
+		<a-entity position="-6.897 -10.948 -33.448" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-4" rotation="0 -94.76721931463815 0" n-box-collider="type:environment"></a-entity>
+		<a-entity position="27.251 -10.948 -15.899" scale="12.367 20.42 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-8" n-box-collider="type:environment" rotation="0 27.2154952687141 0"></a-entity>
+		<a-entity position="36.198 -11.069 -23.161" scale="12.587 20.42 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-7" n-box-collider="type:environment" rotation="0 49.389 0"></a-entity>
+		<a-entity position="-2.704 -10.948 -42.783" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-10" rotation="0 -132.12406755716785 0" n-box-collider="type:environment"></a-entity>
+		<a-entity position="5.533 -10.948 -49.266" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-9" rotation="0 -150.17223810378877 0" n-box-collider="type:environment"></a-entity>
+		<a-entity position="24.698 -10.948 -51.42" scale="6.404 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-11" n-box-collider="type:environment" rotation="0 -11.459155902616466 0"></a-entity>
+		<a-entity position="36.954 -10.948 -41.653" scale="6.404 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-12" n-box-collider="type:environment" rotation="0 -55.462314568663686 0"></a-entity>
+	</a-entity>
 <!--
 <a-entity position="16.281 -10.655 -32.063" geometry="primitive:torus;radiusTubular:0.04" color="#917127" material="src:#crater-1" rotation="90.01166961505233 -179.2784940964346 -179.2784940964346" scale="23.432 19.49 130" id="bigcrater"></a-entity>
 -->
@@ -91,7 +97,7 @@
 <!--begin desert floor--> 
 <!---->
 <a-entity id="desert_floor" position="0 -19.204 0">
-	<a-entity position="-5.74 18.846 -16.694" scale="92.326 70.031 44.335" geometry="primitive:plane" id="lid" material="side:double;src:#lid" rotation="-90 0 0" alpha-test></a-entity>
+	
 	<a-entity material="color:tan;opacity:0;" position="18.893 19.163 2.242" scale="52.669 1 31.538" geometry="" id="sand-2" n-box-collider="type: environment;"></a-entity>
 	<a-entity material="color:tan;opacity:0;" position="-29.955 19.163 -47.087" scale="44.989 1 19.184" geometry="" id="sand-3" n-box-collider="type:environment"></a-entity>
 	<a-entity material="color:tan;opacity:0;" position="-12.355 19.163 11.511" scale="10.211 1 11.861" geometry="" id="sand-4" n-box-collider="type: environment;"></a-entity>
