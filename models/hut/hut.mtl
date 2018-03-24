@@ -12,5 +12,5 @@ newmtl Material_001
 	Kd 0.8000 0.8000 0.8000
 	Ks 0.0608 0.0608 0.0608
 	Ke 0.0000 0.0000 0.0000
-	map_Ka ../../textures/hut.jpg
-	map_Kd ../../textures/hut.jpg
+	map_Ka ../../textures/hut256.png
+	map_Kd ../../textures/hut256.png
