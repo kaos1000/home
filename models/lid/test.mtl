@@ -1,5 +1,5 @@
 # 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
-# File Created: 23.03.2018 10:57:56
+# File Created: 23.03.2018 22:33:09
 
 newmtl Union1Mtl
 	Ns 9.0000
@@ -12,6 +12,4 @@ newmtl Union1Mtl
 	Kd 0.9686 0.9608 1.0000
 	Ks 0.1494 0.1474 0.1535
 	Ke 0.0000 0.0000 0.0000
-	
-	map_Kd ../../textures/desert_sand_texture.jpg -s 5 5
-   
+	map_Kd ../../textures/lid_uv.jpg
