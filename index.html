@@ -96,7 +96,7 @@
 	</a-entity>
 
 
-<!---->
+
 <a-entity id="desert_floor" position="0 -19.204 0">
 
 	<a-entity material="opacity:0" position="22.255 19.163 5.105" scale="52.669 1 24.245" geometry="" id="sand-2" n-box-collider="type:environment"></a-entity>
@@ -107,15 +107,15 @@
 	
 	<a-entity material="opacity:0" position="-47.059 19.163 -23.603" scale="15.045 1 29.992" geometry="" id="sand-8" n-box-collider="type:environment"></a-entity>
 	<a-entity material="opacity:0" position="18.028 19.163 -48.468" scale="31.954 1 3.786" geometry="" id="sand-6" n-box-collider="type:environment"></a-entity>
-	
+	<!--
 	<a-entity material="repeat:400 400;src:#sand;side:double" position="62.016 19.163 1346.6300000000003" scale="4144.694 1 2658.326" geometry="" id="sand-5" n-box-collider="type: environment;"></a-entity>
 	<a-entity material="repeat:400 400;src:#sand;side:double" position="62.016 19.163 -1380.5559999999996" scale="4144.694 1 2658.326" geometry="" id="sand-6" n-box-collider="type: environment;"></a-entity>
 	<a-entity material="repeat:100 3;side:double;src:#sand;" position="-1106.886 19.163 -24.414" scale="2110.044 1 113.192" geometry="" id="sand-8" n-box-collider="type: environment;"></a-entity>
 	<a-entity material="repeat:100 3;side:double;src:#sand;" position="1095.0369999999998 19.163 -24.414" scale="2110.044 1 113.192" geometry="" id="sand-9" n-box-collider="type: environment;"></a-entity>
-
+	-->
 </a-entity>
 
-	
+
 		
 		
 		
@@ -124,7 +124,7 @@
  
 
 <a-entity position="-16.647 -20.792 -17.654" scale="130.939 1 71.927" geometry="" material="repeat:1 1;src:#dirt_floor;" static-body="" id="floor"></a-entity>
-
+<!---->
 <a-entity id="the_test" position="65.755 1.108 0"> 
 	<a-entity position="0 6.586 0" scale="0.787 9.029 0.803" geometry="primitive:cylinder" material="src:#evap"></a-entity>
 	<a-entity position="0.074 9.122 -0.428" scale="0.06 12.226 0.049" geometry="primitive:cylinder" material="src:#evap"></a-entity>
@@ -234,13 +234,21 @@
 
 
 
+<!---->
 
+<a-sky color="#7e9299" radius="2500" material="" geometry=""></a-sky>
 
-
-<a-sky color="#b4cef7" radius="2500" material="" geometry=""></a-sky>
 </a-entity>
 
 <a-entity position="1 1 1" camera="active:true;userHeight:1.6" wasd-controls="easing:20.01;fly:true;acceleration:165" rotation="-38.80136368210983 -1208.0242228532563 0" look-controls="" aframe-injected="" data-aframe-inspector-original-camera="" data-aframe-inspector="default-camera"></a-entity>
+
+<a-entity id="desert2">
+	<a-entity id="snd" position="1996 19.795 943.357" scale="4158.082 -2.024 1783.906" geometry="" material="repeat:400 400;src:#sand;side:double;" n-box-collider="type:environment"></a-entity>
+	<a-entity id="snd-2" position="-2067.0669999999996 19.785 -910.6709999999999" scale="4158.082 -2.024 1783.906" geometry="" material="repeat:400 400;side:double;src:#sand" n-box-collider="type:environment"></a-entity>
+	<a-entity id="snd-3" position="-2162.059 19.785 873.873" scale="4158.082 -2.024 1783.906" geometry="" material="repeat:400 400;side:double;src:#sand" n-box-collider="type:environment"></a-entity>
+	<a-entity id="snd-4" position="2090.972 19.785 -840.5459999999999" scale="4158.082 -2.024 1783.906" geometry="" material="repeat:400 400;side:double;src:#sand" n-box-collider="type:environment"></a-entity>
+</a-entity>
+
 </a-scene>
 <script>
 	AFRAME.registerComponent('alpha-test', {
