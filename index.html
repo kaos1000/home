@@ -10,6 +10,7 @@
 		 <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
 		
 		<script src="https://sdk.altvr.com/libs/altspace.js/2.8.1/altspace.min.js"></script>
+		
 
 	</head>
 	<body>
@@ -48,6 +49,11 @@
 <!--
 <a-entity position="-40.4 -10.325 -28.62" scale="19.702 0.152 -1.415" geometry="" material="color:#000" id="bridge" n-box-collider="type: environment;"></a-entity>
 -->
+<a-entity id="craters">
+	<a-entity obj-model="mtl:models/craters/craters.mtl;obj:models/craters/craters.obj" id="the_craters"  altspace-cursor-collider="enabled:false" position="-37.583 -0.5840000000000001 -37.544" scale="1.93 1 2.309"></a-entity>
+
+</a-entity>
+
 <a-entity id="crater_wall" material="opacity:0" position="0 0.8059999999999999 6.425" scale="1 1.11 1">
 		<a-entity position="16.123 -10.948 -54.726" scale="12.639 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main" n-box-collider="type:environment" rotation="0 -4.755549699585833 0"></a-entity>
 		<a-entity position="16.077 -10.948 -13.468" scale="11.835 20.42 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-2" n-box-collider="type:environment" rotation="0 11.802930579694959 0"></a-entity>
@@ -65,7 +71,7 @@
 		<a-entity position="-1.521 -7.917 -29.009" scale="11.835 11.652 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-13" rotation="0 -75.57313317775558 0" n-box-collider="type:environment"></a-entity>
 	</a-entity>
 	<a-entity id="crater_wall-2" position="-37.087 0.8400000000000001 -0.323" scale="0.6 1.11 0.7">
-			<a-entity position="16.077 -10.948 -55.713" scale="13.445 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main" n-box-collider="type:environment"></a-entity>
+				<a-entity position="16.077 -10.948 -55.713" scale="13.445 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main" n-box-collider="type:environment"></a-entity>
 				<a-entity position="15.459 -10.948 -12.181" scale="11.835 21.069 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-2" n-box-collider="type:environment"></a-entity>
 				<a-entity position="5.735 -10.948 -14.095" scale="11.835 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-6" rotation="0 -27.445 0" n-box-collider="type:environment"></a-entity>
 				<a-entity position="39.494 -15.871 -33.448" scale="11.835 10.738 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-3" rotation="0 -82.219 0" n-box-collider="type:environment"></a-entity>
@@ -78,7 +84,7 @@
 				<a-entity position="4.061 -10.948 -52.065" scale="13.362 20.847 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-9" rotation="0 -148.28147737985705 0" n-box-collider="type:environment"></a-entity>
 				<a-entity position="24.301 -10.948 -54.299" scale="8.109 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-11" n-box-collider="type:environment" rotation="0 -26.012283898939376 0"></a-entity>
 				<a-entity position="36.223 -10.948 -39.698" scale="11.573 20.732 4.624" geometry="primitive:plane" material="repeat:3 3;side:double;src:#ground" id="main-12" n-box-collider="type:environment" rotation="0 -75.00017538262476 0"></a-entity>
-			</a-entity>
+	</a-entity>
 
 
 <!---->
@@ -89,7 +95,7 @@
 	<a-entity material="opacity:0" position="-9.363 19.163 15.554" scale="11.152 1 11.861" geometry="" id="sand-4" n-box-collider="type:environment"></a-entity>
 	<a-entity material="opacity:0" position="-35.883 19.163 4.316" scale="41.607 1 26.744" geometry="" id="sand" n-box-collider="type:environment"></a-entity>
 	<a-entity material="opacity:0" position="-8.39 19.163 -17.29" scale="13.869 1 45.387" geometry="" id="sand-7" n-box-collider="type:environment"></a-entity>
-	<a-entity material="opacity:0" position="39.667 19.163 -28.856" scale="43.266 1 12.175" geometry="" id="sand-5" n-box-collider="type:environment" rotation="0 -90 0"></a-entity>
+	
 	<a-entity material="opacity:0" position="-47.059 19.163 -23.603" scale="15.045 1 29.992" geometry="" id="sand-8" n-box-collider="type:environment"></a-entity>
 	<a-entity material="opacity:0" position="18.028 19.163 -48.468" scale="31.954 1 3.786" geometry="" id="sand-6" n-box-collider="type:environment"></a-entity>
 	
