@@ -9,7 +9,7 @@
 		 <!---->
 		 <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
 		
-		<script src="https://sdk.altvr.com/libs/altspace.js/2.8.1/altspace.min.js"></script>
+		 <script src="https://sdk.altvr.com/libs/altspace.js/2.9.0/altspace.min.js"></script>
 		
 
 	</head>
@@ -49,7 +49,10 @@
 	
 
 	<a-entity obj-model="mtl:models/lid/lid2.mtl;obj:models/lid/lid2.obj" id="lid2" position="-37.583 -0.5840000000000001 -37.544" scale="1.93 1 2.309" altspace-cursor-collider="enabled:false" material="transparent:true"></a-entity>
-<!---->
+	<a-entity obj-model="mtl:models/lid/lid2.mtl;obj:models/lid/lid2.obj" id="lower_floor" position="-37.583 -11.233 -37.544" scale="1.93 1 2.309" altspace-cursor-collider="enabled:false" material="transparent:true"></a-entity>
+
+
+	<!---->
 <a-entity position="-27.49 -9.474 -22.046" scale="26.85 0.152 -2.457" geometry="" material="repeat:10 1;transparent:true;src:#catwalk;" id="bridge" n-box-collider="type:environment" rotation="0 15.2406773504799 0"></a-entity>
 
 	<a-entity id="craters" position="0 1.237 0" scale="1 1.558 1">
@@ -249,6 +252,13 @@
 	<a-entity id="snd-4" position="2090.972 19.785 -840.5459999999999" scale="4158.082 -2.024 1783.906" geometry="" material="repeat:400 400;side:double;src:#sand" n-box-collider="type:environment"></a-entity>
 </a-entity>
 </a-entity>
+<!-- Match Gear VR controller if present, regardless of hand. -->
+<a-entity gearvr-controls></a-entity>
+
+<!-- Match Gear VR controller if present and for specified hand.
+<a-entity gearvr-controls="hand: left"></a-entity>
+<a-entity gearvr-controls="hand: right"></a-entity>
+ -->
 </a-scene>
 
 <script>
