@@ -32,7 +32,7 @@
 </a-assets>
   
 
-	
+<a-entity id="master" scale=".45 .45 .45">
   
 <a-entity id="env_0" position="-27.916 20.33 33.966">
 	<!--
@@ -243,13 +243,14 @@
 <a-entity position="1 1 1" camera="active:true;userHeight:1.6" wasd-controls="easing:20.01;fly:true;acceleration:165" rotation="-38.80136368210983 -1208.0242228532563 0" look-controls="" aframe-injected="" data-aframe-inspector-original-camera="" data-aframe-inspector="default-camera"></a-entity>
 
 <a-entity id="desert2">
-	<a-entity id="snd" position="1996 19.795 943.357" scale="4158.082 -2.024 1783.906" geometry="" material="repeat:400 400;src:#sand;side:double;" n-box-collider="type:environment"></a-entity>
+	<a-entity id="snd" position="1996 19.795 943.357" scale="4158.082 -2.024 1783.906" geometry="" material="color:white;repeat:400 400;src:#sand;side:double;" n-box-collider="type:environment"></a-entity>
 	<a-entity id="snd-2" position="-2067.0669999999996 19.785 -910.6709999999999" scale="4158.082 -2.024 1783.906" geometry="" material="repeat:400 400;side:double;src:#sand" n-box-collider="type:environment"></a-entity>
 	<a-entity id="snd-3" position="-2162.059 19.785 873.873" scale="4158.082 -2.024 1783.906" geometry="" material="repeat:400 400;side:double;src:#sand" n-box-collider="type:environment"></a-entity>
 	<a-entity id="snd-4" position="2090.972 19.785 -840.5459999999999" scale="4158.082 -2.024 1783.906" geometry="" material="repeat:400 400;side:double;src:#sand" n-box-collider="type:environment"></a-entity>
 </a-entity>
-
+</a-entity>
 </a-scene>
+
 <script>
 	AFRAME.registerComponent('alpha-test', {
   dependencies: ['material'],
