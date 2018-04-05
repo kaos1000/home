@@ -12,5 +12,5 @@ newmtl 07___Default
 	Kd 0.5882353187 0.5882353187 0.5882353187
 	Ks 0.0000000000 0.0000000000 0.0000000000
 	Ke 0.0000000000 0.0000000000 0.0000000000
-	map_Ka ../../textures/hut_uv3.png
-	map_Kd ../../textures/hut_uv3.png
+	map_Ka ../../textures/hut_uv3.jpg
+	map_Kd ../../textures/hut_uv3.jpg

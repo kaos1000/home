@@ -12,5 +12,5 @@ newmtl 02___Default
 	Kd 1.0000000000 1.0000000000 1.0000000000
 	Ks 0.0000000000 0.0000000000 0.0000000000
 	Ke 0.0000000000 0.0000000000 0.0000000000
-	map_Ka ../../textures/lid_uv2.png
-	map_Kd ../../textures/lid_uv2.png
+	map_Ka ../../textures/lid_uv2.jpg
+	map_Kd ../../textures/lid_uv2.jpg
