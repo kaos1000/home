@@ -6,9 +6,9 @@
 		 <!--  
 			 <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
 		-->
-		 <!---->
+		 <!--	-->
 		 <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
-		
+	
 		 <script src="https://sdk.altvr.com/libs/altspace.js/2.9.0/altspace.min.js"></script>
 		
 
@@ -21,10 +21,11 @@
 	<img id="sand" src="textures/desert_sand_texture.jpg">
 	<img id="evap" src="textures/evap.jpg">
 	<img id="dome" src="textures/stained_plaster.jpg">
+	<img id="fence" src="textures/fence.png">	
 	<img id="ground" src="textures/ground_seamless_200.jpg">
 	<img id="crater-1" src="textures/crater-1.png">
 	<img id="lid" src="textures/lid.png">
-	<img id="dirt_floor" src="textures/dirt_floor.png">
+	<img id="dirt_floor" src="textures/dirt_floor.jpg">
 	<img id="catwalk" src="textures/catwalk.png">	
 	<a-asset-item id="hut-obj" src="models/hut/hut.obj"></a-asset-item>
 	<a-asset-item id="hut-mtl" src="models/hut/hut.mtl"></a-asset-item>
@@ -35,24 +36,139 @@
 <a-entity id="master" scale=".45 .45 .45">
   
 <a-entity id="env_0" position="-27.916 20.33 33.966">
+	<!---->
+	<a-entity id="all_top_lamps">
+
+		<a-entity id="lamp" position="-1.784 -7.626 -16.222">
+			<a-entity position="0 4.675 0" geometry="primitive:cone" material="color:#000000"></a-entity>
+			<a-entity position="0 4.199 0" scale="0.679 0.161 0.679" geometry="primitive:cylinder" material="color:#ffffff;emissive:#ffffff"></a-entity>
+			<a-entity position="0 5.91 0" scale="0.092 3.021 0.092" geometry="primitive:cylinder" material="color:#000000"></a-entity>
+		</a-entity><a-entity id="lamp-2" position="14.038 -7.626 -5.407">
+			<a-entity position="0 4.675 0" geometry="primitive:cone" material="color:#000000"></a-entity>
+			<a-entity position="0 4.199 0" scale="0.679 0.161 0.679" geometry="primitive:cylinder" material="color:#ffffff;emissive:#ffffff"></a-entity>
+			<a-entity position="0 5.91 0" scale="0.092 3.021 0.092" geometry="primitive:cylinder" material="color:#000000"></a-entity>
+		</a-entity><a-entity id="lamp-3" position="31.518 -7.626 -17.64">
+			<a-entity position="0 4.675 0" geometry="primitive:cone" material="color:#000000"></a-entity>
+			<a-entity position="0 4.199 0" scale="0.679 0.161 0.679" geometry="primitive:cylinder" material="color:#ffffff;emissive:#ffffff"></a-entity>
+			<a-entity position="0 5.91 0" scale="0.092 3.021 0.092" geometry="primitive:cylinder" material="color:#000000"></a-entity>
+		</a-entity><a-entity id="lamp-4" position="32.872 -7.626 -35.368">
+			<a-entity position="0 4.675 0" geometry="primitive:cone" material="color:#000000"></a-entity>
+			<a-entity position="0 4.199 0" scale="0.679 0.161 0.679" geometry="primitive:cylinder" material="color:#ffffff;emissive:#ffffff"></a-entity>
+			<a-entity position="0 5.91 0" scale="0.092 3.021 0.092" geometry="primitive:cylinder" material="color:#000000"></a-entity>
+		</a-entity><a-entity id="lamp-5" position="21.14 -7.626 -49.328">
+			<a-entity position="0 4.675 0" geometry="primitive:cone" material="color:#000000"></a-entity>
+			<a-entity position="0 4.199 0" scale="0.679 0.161 0.679" geometry="primitive:cylinder" material="color:#ffffff;emissive:#ffffff"></a-entity>
+			<a-entity position="0 5.91 0" scale="0.092 3.021 0.092" geometry="primitive:cylinder" material="color:#000000"></a-entity>
+		</a-entity><a-entity id="lamp-6" position="2.173 -7.626 -46.361">
+			<a-entity position="0 4.675 0" geometry="primitive:cone" material="color:#000000"></a-entity>
+			<a-entity position="0 4.199 0" scale="0.679 0.161 0.679" geometry="primitive:cylinder" material="color:#ffffff;emissive:#ffffff"></a-entity>
+			<a-entity position="0 5.91 0" scale="0.092 3.021 0.092" geometry="primitive:cylinder" material="color:#000000"></a-entity>
+		</a-entity><a-entity id="lamp-7" position="-19.23 -7.626 -38.122">
+			<a-entity position="0 4.675 0" geometry="primitive:cone" material="color:#000000"></a-entity>
+			<a-entity position="0 4.199 0" scale="0.679 0.161 0.679" geometry="primitive:cylinder" material="color:#ffffff;emissive:#ffffff"></a-entity>
+			<a-entity position="0 5.91 0" scale="0.092 3.021 0.092" geometry="primitive:cylinder" material="color:#000000"></a-entity>
+		</a-entity><a-entity id="lamp-8" position="-13.227 -7.626 -27.619">
+			<a-entity position="0 4.675 0" geometry="primitive:cone" material="color:#000000"></a-entity>
+			<a-entity position="0 4.199 0" scale="0.679 0.161 0.679" geometry="primitive:cylinder" material="color:#ffffff;emissive:#ffffff"></a-entity>
+			<a-entity position="0 5.91 0" scale="0.092 3.021 0.092" geometry="primitive:cylinder" material="color:#000000"></a-entity>
+		</a-entity><a-entity id="lamp-9" position="-17.503 -9.106 -10.724">
+			<a-entity position="0 4.675 0" geometry="primitive:cone" material="color:#000000"></a-entity>
+			<a-entity position="0 4.199 0" scale="0.679 0.161 0.679" geometry="primitive:cylinder" material="color:#ffffff;emissive:#ffffff"></a-entity>
+			<a-entity position="0 5.91 0" scale="0.092 3.021 0.092" geometry="primitive:cylinder" material="color:#000000"></a-entity>
+		</a-entity><a-entity id="lamp-10" position="-33.639 -9.106 -7.859">
+			<a-entity position="0 4.675 0" geometry="primitive:cone" material="color:#000000"></a-entity>
+			<a-entity position="0 4.199 0" scale="0.679 0.161 0.679" geometry="primitive:cylinder" material="color:#ffffff;emissive:#ffffff"></a-entity>
+			<a-entity position="0 5.91 0" scale="0.092 3.021 0.092" geometry="primitive:cylinder" material="color:#000000"></a-entity>
+		</a-entity><a-entity id="lamp-11" position="-36.715 -9.106 -38.126">
+			<a-entity position="0 4.675 0" geometry="primitive:cone" material="color:#000000"></a-entity>
+			<a-entity position="0 4.199 0" scale="0.679 0.161 0.679" geometry="primitive:cylinder" material="color:#ffffff;emissive:#ffffff"></a-entity>
+			<a-entity position="0 5.91 0" scale="0.092 3.021 0.092" geometry="primitive:cylinder" material="color:#000000"></a-entity>
+		</a-entity>
+	
+	</a-entity>
+
+<a-entity id="all_bottom_lamps" position="0 -12.298 0">
+
+	<a-entity id="lamp" position="2.543 -7.626 -9.47">
+		<a-entity position="0 4.675 0" geometry="primitive:cone" material="color:#000000"></a-entity>
+		<a-entity position="0 4.199 0" scale="0.679 0.161 0.679" geometry="primitive:cylinder" material="color:#ffffff;emissive:#ffffff"></a-entity>
+		<a-entity position="0 5.91 0" scale="0.092 3.021 0.092" geometry="primitive:cylinder" material="color:#000000"></a-entity>
+	</a-entity><a-entity id="lamp-2" position="24.793 -7.626 -8.027">
+		<a-entity position="0 4.675 0" geometry="primitive:cone" material="color:#000000"></a-entity>
+		<a-entity position="0 4.199 0" scale="0.679 0.161 0.679" geometry="primitive:cylinder" material="color:#ffffff;emissive:#ffffff"></a-entity>
+		<a-entity position="0 5.91 0" scale="0.092 3.021 0.092" geometry="primitive:cylinder" material="color:#000000"></a-entity>
+	</a-entity><a-entity id="lamp-3" position="33.969 -7.626 -24.14">
+		<a-entity position="0 4.675 0" geometry="primitive:cone" material="color:#000000"></a-entity>
+		<a-entity position="0 4.199 0" scale="0.679 0.161 0.679" geometry="primitive:cylinder" material="color:#ffffff;emissive:#ffffff"></a-entity>
+		<a-entity position="0 5.91 0" scale="0.092 3.021 0.092" geometry="primitive:cylinder" material="color:#000000"></a-entity>
+	</a-entity><a-entity id="lamp-4" position="27.263 -7.626 -44.685">
+		<a-entity position="0 4.675 0" geometry="primitive:cone" material="color:#000000"></a-entity>
+		<a-entity position="0 4.199 0" scale="0.679 0.161 0.679" geometry="primitive:cylinder" material="color:#ffffff;emissive:#ffffff"></a-entity>
+		<a-entity position="0 5.91 0" scale="0.092 3.021 0.092" geometry="primitive:cylinder" material="color:#000000"></a-entity>
+	</a-entity>
+	<a-entity id="lamp-6" position="2.173 -7.626 -46.361">
+		<a-entity position="0 4.675 0" geometry="primitive:cone" material="color:#000000"></a-entity>
+		<a-entity position="0 4.199 0" scale="0.679 0.161 0.679" geometry="primitive:cylinder" material="color:#ffffff;emissive:#ffffff"></a-entity>
+		<a-entity position="0 5.91 0" scale="0.092 3.021 0.092" geometry="primitive:cylinder" material="color:#000000"></a-entity>
+	</a-entity><a-entity id="lamp-7" position="-16.08 -7.626 -35.26">
+		<a-entity position="0 4.675 0" geometry="primitive:cone" material="color:#000000"></a-entity>
+		<a-entity position="0 4.199 0" scale="0.679 0.161 0.679" geometry="primitive:cylinder" material="color:#ffffff;emissive:#ffffff"></a-entity>
+		<a-entity position="0 5.91 0" scale="0.092 3.021 0.092" geometry="primitive:cylinder" material="color:#000000"></a-entity>
+	</a-entity><a-entity id="lamp-8" position="-14.674 -7.626 -15.46">
+		<a-entity position="0 4.675 0" geometry="primitive:cone" material="color:#000000"></a-entity>
+		<a-entity position="0 4.199 0" scale="0.679 0.161 0.679" geometry="primitive:cylinder" material="color:#ffffff;emissive:#ffffff"></a-entity>
+		<a-entity position="0 5.91 0" scale="0.092 3.021 0.092" geometry="primitive:cylinder" material="color:#000000"></a-entity>
+	</a-entity><a-entity id="lamp-9" position="-28.03 -9.106 -6.796">
+		<a-entity position="0 4.675 0" geometry="primitive:cone" material="color:#000000"></a-entity>
+		<a-entity position="0 4.199 0" scale="0.679 0.161 0.679" geometry="primitive:cylinder" material="color:#ffffff;emissive:#ffffff"></a-entity>
+		<a-entity position="0 5.91 0" scale="0.092 3.021 0.092" geometry="primitive:cylinder" material="color:#000000"></a-entity>
+	</a-entity><a-entity id="lamp-10" position="-39.722 -9.106 -15.205">
+		<a-entity position="0 4.675 0" geometry="primitive:cone" material="color:#000000"></a-entity>
+		<a-entity position="0 4.199 0" scale="0.679 0.161 0.679" geometry="primitive:cylinder" material="color:#ffffff;emissive:#ffffff"></a-entity>
+		<a-entity position="0 5.91 0" scale="0.092 3.021 0.092" geometry="primitive:cylinder" material="color:#000000"></a-entity>
+	</a-entity><a-entity id="lamp-11" position="-42.695 -9.106 -29.959">
+		<a-entity position="0 4.675 0" geometry="primitive:cone" material="color:#000000"></a-entity>
+		<a-entity position="0 4.199 0" scale="0.679 0.161 0.679" geometry="primitive:cylinder" material="color:#ffffff;emissive:#ffffff"></a-entity>
+		<a-entity position="0 5.91 0" scale="0.092 3.021 0.092" geometry="primitive:cylinder" material="color:#000000"></a-entity>
+	</a-entity>
+
+</a-entity>
+
+		<a-entity id="deck" position="-1.925 0 4.502">
+			<a-entity geometry="" id="fence_piece" material="side:double;transparent:true;src:#fence" position="-7.768 -3.202 5.017" scale="9.8 2.95 0.017" n-box-collider="type:environment"></a-entity>
+			<a-entity position="-7.812 -4.7 -1.088" scale="9.746 0.072 12.201" geometry="" id="platform" material="repeat:5 5;side:double;transparent:true;src:#catwalk" n-box-collider="type:environment"></a-entity>		
+			<a-entity position="-12.517 -7.73 4.795" scale="0.313 6.102 0.346" geometry="" id="post" material="color:black"></a-entity>
+			<a-entity position="-12.517 -7.73 -6.838" scale="0.313 6.102 0.346" geometry="" id="post-2" material="color:black"></a-entity>
+			<a-entity position="-3.186 -7.73 -6.838" scale="0.313 6.102 0.346" geometry="" id="post-3" material="color:black"></a-entity>
+			<a-entity position="-12.517 -7.73 -6.838" scale="0.313 6.102 0.346" geometry="" id="post-2" material="color:black"></a-entity>
+			<a-entity position="-3.186 -7.73 -10.194" scale="0.313 6.102 0.346" geometry="" id="post-4" material="color:black"></a-entity>
+			<a-entity position="-3.186 -7.73 4.863" scale="0.313 6.102 0.346" geometry="" id="post-5" material="color:black"></a-entity>
+			<a-entity position="-9.157 -7.115 -8.744" rotation="0 0 21.601" scale="13.159 0.007 3.412" geometry="" id="ramp-4" material="repeat:10 1;side:double;transparent:true;src:#catwalk" n-box-collider="type:environment"></a-entity>
+		</a-entity>
+<!--
+<a-entity id="outside_walls" position="0 0.557 0">
+	<a-entity id="o_wall" geometry="" material="color:black;" position="39.536 -11.98 -17.448" scale="1 21.435 75.582" n-box-collider="type:environment"></a-entity>
+	<a-entity id="o_wall-2" geometry="" material="color:black" position="-52.968 -11.98 -17.448" scale="1 21.435 75.582" n-box-collider="type:environment"></a-entity>
+	<a-entity id="o_wall-3" geometry="" material="color:black" position="-6.513 -11.98 17.384" scale="1 21.435 93.44" rotation="0 90 0" n-box-collider="type:environment"></a-entity>
+	<a-entity id="o_wall-4" geometry="" material="color:black" position="-6.513 -11.98 -52.922" scale="1 21.435 93.44" rotation="0 90 0" n-box-collider="type:environment"></a-entity>
+</a-entity>
+	-->
 	<!--
 	<a-entity position="12.122 -15.605 -14.47" rotation="0 0 -25.15284720624314" scale="22.808 1 2.088" geometry="" id="ramp" material="repeat:3 3;side:double;src:#ground" n-box-collider="type:environment"></a-entity>
 	-->
-	<a-entity position="-11.603 -5.724 6.917" rotation="-2.063 -2.636 35.753" scale="19.646 1 2.088" geometry="" id="ramp-2" material="repeat:3 3;side:double;src:#ground;" n-box-collider="type:environment"></a-entity>
-	<a-entity position="43.634 -16.349 -15.141" rotation="-2.0626480624709633 -86.68851440329355 35.75256641616337" scale="19.646 1 2.088" geometry="" id="ramp-3" material="repeat:3 3;side:double;src:#ground" n-box-collider="type:environment"></a-entity>
-	<a-entity position="-8.082 -10.785 -17.007" scale="14.88 1 66.652" geometry="" id="main_floor" n-box-collider="type:environment" material="repeat:3 3;side:double;color:#6b4201;src:#ground"></a-entity>
-	<a-entity position="-48.077 -10.785 4.277" scale="69.617 1 23.649" geometry="" id="main_floor-2" n-box-collider="type:environment" material="repeat:3 3;side:double;color:#6b4201;src:#ground"></a-entity>
-	<a-entity position="23.57 -10.785 4.277" scale="43.884 1 23.649" geometry="" id="main_floor-3" n-box-collider="type:environment" material="repeat:3 3;side:double;color:#6b4201;src:#ground;"></a-entity>
-	<a-entity position="-61.874 -10.785 -30.975" scale="40.894 1 46.892" geometry="" id="main_floor-4" n-box-collider="type:environment" material="repeat:3 3;side:double;color:#6b4201;src:#ground"></a-entity>
-	<a-entity obj-model="mtl:models/hut/hut.mtl;obj:models/hut/hut.obj" id="hut_model" position="-13.723 0.422 6.526" rotation="0 -55.119 0" scale="1.726 1.462 1.759"></a-entity>
+
+	<a-entity position="-12.706 -15.977 7.279" rotation="0 0 35.75256641616337" scale="19.646 0.007 3.412" geometry="" id="ramp-3" material="repeat:10 1;side:double;transparent:true;src:#catwalk" n-box-collider="type:environment"></a-entity>
+	<a-entity position="-6.276 -2.226 7.089" rotation="0 0 35.753" scale="8.511 0.007 3.412" geometry="" id="ramp-5" material="repeat:10 1;side:double;transparent:true;src:#catwalk" n-box-collider="type:environment"></a-entity>
+	<a-entity obj-model="mtl:models/hut/hut3.mtl;obj:models/hut/hut3.obj" id="hut_model" position="-11.437 0.629 6.526" rotation="0 -55.119 0" scale="1.726 1.462 1.759"></a-entity>
 
 	
-
+<!--	-->
 	<a-entity obj-model="mtl:models/lid/lid2.mtl;obj:models/lid/lid2.obj" id="lid2" position="-37.583 -0.5840000000000001 -37.544" scale="1.93 1 2.309" altspace-cursor-collider="enabled:false" material="transparent:true"></a-entity>
-	<a-entity obj-model="mtl:models/lid/lid2.mtl;obj:models/lid/lid2.obj" id="lower_floor" position="-37.583 -11.233 -37.544" scale="1.93 1 2.309" altspace-cursor-collider="enabled:false" material="transparent:true"></a-entity>
+	
+	<a-entity obj-model="mtl:models/lid/lower_floor.mtl;obj:models/lid/lid2.obj" id="lower_floor" position="-37.583 -11.233 -37.544" scale="1.93 1 2.309" altspace-cursor-collider="enabled:false" material="transparent:true"></a-entity>
 
 
-	<!---->
+
 <a-entity position="-27.49 -9.474 -22.046" scale="26.85 0.152 -2.457" geometry="" material="repeat:10 1;transparent:true;src:#catwalk;" id="bridge" n-box-collider="type:environment" rotation="0 15.2406773504799 0"></a-entity>
 
 	<a-entity id="craters" position="0 1.237 0" scale="1 1.558 1">
@@ -99,26 +215,49 @@
 	</a-entity>
 
 
+	<a-entity id="top_colliders" position="0 -19.204 0"  visible="false" class="colliders">
 
-<a-entity id="desert_floor" position="0 -19.204 0">
-
-	<a-entity material="opacity:0" position="22.255 19.163 5.105" scale="52.669 1 24.245" geometry="" id="sand-2" n-box-collider="type:environment"></a-entity>
-	<a-entity material="opacity:0" position="-26.139 19.163 -44.528" scale="56.238 1 12.175" geometry="" id="sand-3" n-box-collider="type:environment"></a-entity>
-	<a-entity material="opacity:0" position="-9.363 19.163 15.554" scale="11.152 1 11.861" geometry="" id="sand-4" n-box-collider="type:environment"></a-entity>
-	<a-entity material="opacity:0" position="-35.883 19.163 4.316" scale="41.607 1 26.744" geometry="" id="sand" n-box-collider="type:environment"></a-entity>
-	<a-entity material="opacity:0" position="-8.39 19.163 -17.29" scale="13.869 1 45.387" geometry="" id="sand-7" n-box-collider="type:environment"></a-entity>
+		<a-entity  position="22.255 19.163 5.105" scale="52.669 1 24.245" geometry="" id="sand-2" n-box-collider="type:environment" material="color:black;opacity:0"></a-entity>
+		<a-entity  position="-26.139 19.163 -44.528" scale="56.238 1 12.175" geometry="" id="sand-3" n-box-collider="type:environment" material="color:black;opacity:0"></a-entity>
+		<a-entity  position="-9.363 19.163 15.554" scale="11.152 1 11.861" geometry="" id="sand-4" n-box-collider="type:environment" material="color:black;opacity:0"></a-entity>
+		<a-entity material="color:black;opacity:0" position="-0.553 19.163 -9.472" scale="11.152 1 25.736" geometry="" id="sand-5" n-box-collider="type:environment" rotation="0 55.69149768671602 0"></a-entity>
+			<a-entity material="color:black;opacity:0" position="28.459 19.163 -45.675" scale="11.152 1 25.736" geometry="" id="sand-10" n-box-collider="type:environment" rotation="0 45.14907425630887 0"></a-entity>
+			<a-entity material="color:black;opacity:0" position="-16.926 19.163 -40.093" scale="11.152 1 25.736" geometry="" id="sand-11" n-box-collider="type:environment" rotation="0 45.14907425630887 0"></a-entity>
+			<a-entity material="color:black;opacity:0" position="-41.225 19.163 -11.282" scale="11.152 1 25.736" geometry="" id="sand-12" n-box-collider="type:environment" rotation="0 45.14907425630887 0"></a-entity>
+			<a-entity material="color:black;opacity:0" position="-15.293 19.163 -9.464" scale="11.152 1 25.736" geometry="" id="sand-13" n-box-collider="type:environment" rotation="0 131.89488443911551 0"></a-entity>
+			<a-entity material="color:black;opacity:0" position="29.285 19.163 -9.464" scale="11.152 1 25.736" geometry="" id="sand-14" n-box-collider="type:environment" rotation="0 131.89488443911551 0"></a-entity>
+			<a-entity material="color:black;opacity:0" position="0.96 19.163 -44.95" scale="11.152 1 25.736" geometry="" id="sand-15" n-box-collider="type:environment" rotation="0 131.89488443911551 0"></a-entity>
+			<a-entity material="color:black;opacity:0" position="-39.109 19.163 -37.705" scale="11.152 1 25.736" geometry="" id="sand-16" n-box-collider="type:environment" rotation="0 131.89488443911551 0"></a-entity>
+		<a-entity material="color:black;opacity:0" position="-35.883 19.163 4.316" scale="41.607 1 26.744" geometry="" id="sand" n-box-collider="type:environment"></a-entity>
+		<a-entity material="color:black;opacity:0" position="-8.39 19.163 -17.29" scale="13.869 1 45.387" geometry="" id="sand-7" n-box-collider="type:environment"></a-entity>
+		
+		<a-entity material="color:black;opacity:0" position="-47.059 19.163 -23.603" scale="15.045 1 29.992" geometry="" id="sand-8" n-box-collider="type:environment"></a-entity>
+		<a-entity material="color:black;opacity:0" position="18.028 19.163 -48.468" scale="31.954 1 3.786" geometry="" id="sand-6" n-box-collider="type:environment"></a-entity>
+		<a-entity material="color:black;opacity:0" position="39.445 19.163 -23.603" scale="18.809 1 54.266" geometry="" id="sand-9" n-box-collider="type:environment"></a-entity>
 	
-	<a-entity material="opacity:0" position="-47.059 19.163 -23.603" scale="15.045 1 29.992" geometry="" id="sand-8" n-box-collider="type:environment"></a-entity>
-	<a-entity material="opacity:0" position="18.028 19.163 -48.468" scale="31.954 1 3.786" geometry="" id="sand-6" n-box-collider="type:environment"></a-entity>
-	<!--
-	<a-entity material="repeat:400 400;src:#sand;side:double" position="62.016 19.163 1346.6300000000003" scale="4144.694 1 2658.326" geometry="" id="sand-5" n-box-collider="type: environment;"></a-entity>
-	<a-entity material="repeat:400 400;src:#sand;side:double" position="62.016 19.163 -1380.5559999999996" scale="4144.694 1 2658.326" geometry="" id="sand-6" n-box-collider="type: environment;"></a-entity>
-	<a-entity material="repeat:100 3;side:double;src:#sand;" position="-1106.886 19.163 -24.414" scale="2110.044 1 113.192" geometry="" id="sand-8" n-box-collider="type: environment;"></a-entity>
-	<a-entity material="repeat:100 3;side:double;src:#sand;" position="1095.0369999999998 19.163 -24.414" scale="2110.044 1 113.192" geometry="" id="sand-9" n-box-collider="type: environment;"></a-entity>
-	-->
-</a-entity>
+	</a-entity>
 
+	<a-entity id="bottom_colliders" position="0 -30.01 0">
 
+		<a-entity material="color:black;opacity:0" position="22.255 19.163 5.105" scale="52.669 1 24.245" geometry="" id="sand-2" n-box-collider="type:environment"></a-entity>
+		<a-entity material="color:black;opacity:0" position="-26.139 19.163 -44.528" scale="56.238 1 12.175" geometry="" id="sand-3" n-box-collider="type:environment"></a-entity>
+		<a-entity material="color:black;opacity:0" position="-9.363 19.163 15.554" scale="11.152 1 11.861" geometry="" id="sand-4" n-box-collider="type:environment"></a-entity>
+		<a-entity material="color:black;opacity:0" position="-0.553 19.163 -9.472" scale="11.152 1 25.736" geometry="" id="sand-5" n-box-collider="type:environment" rotation="0 55.69149768671602 0"></a-entity>
+		<a-entity material="color:black;opacity:0" position="28.459 19.163 -45.675" scale="11.152 1 25.736" geometry="" id="sand-10" n-box-collider="type:environment" rotation="0 45.14907425630887 0"></a-entity>
+		<a-entity material="color:black;opacity:0" position="-16.926 19.163 -40.093" scale="11.152 1 25.736" geometry="" id="sand-11" n-box-collider="type:environment" rotation="0 45.14907425630887 0"></a-entity>
+		<a-entity material="color:black;opacity:0" position="-41.225 19.163 -11.282" scale="11.152 1 25.736" geometry="" id="sand-12" n-box-collider="type:environment" rotation="0 45.14907425630887 0"></a-entity>
+		<a-entity material="color:black;opacity:0" position="-15.293 19.163 -9.464" scale="11.152 1 25.736" geometry="" id="sand-13" n-box-collider="type:environment" rotation="0 131.89488443911551 0"></a-entity>
+		<a-entity material="color:black;opacity:0" position="29.285 19.163 -9.464" scale="11.152 1 25.736" geometry="" id="sand-14" n-box-collider="type:environment" rotation="0 131.89488443911551 0"></a-entity>
+		<a-entity material="color:black;opacity:0" position="0.96 19.163 -44.95" scale="11.152 1 25.736" geometry="" id="sand-15" n-box-collider="type:environment" rotation="0 131.89488443911551 0"></a-entity>
+		<a-entity material="color:black;opacity:0" position="-39.109 19.163 -37.705" scale="11.152 1 25.736" geometry="" id="sand-16" n-box-collider="type:environment" rotation="0 131.89488443911551 0"></a-entity>
+		<a-entity material="color:black;opacity:0" position="-35.883 19.163 4.316" scale="41.607 1 26.744" geometry="" id="sand" n-box-collider="type:environment"></a-entity>
+		<a-entity material="color:black;opacity:0" position="-8.39 19.163 -17.29" scale="13.869 1 45.387" geometry="" id="sand-7" n-box-collider="type:environment"></a-entity>
+		
+		<a-entity material="color:black;opacity:0" position="-47.059 19.163 -23.603" scale="15.045 1 29.992" geometry="" id="sand-8" n-box-collider="type:environment"></a-entity>
+		<a-entity material="color:black;opacity:0" position="18.028 19.163 -48.468" scale="31.954 1 3.786" geometry="" id="sand-6" n-box-collider="type:environment"></a-entity>
+		<a-entity material="color:black;opacity:0" position="39.445 19.163 -23.603" scale="18.809 1 54.266" geometry="" id="sand-9" n-box-collider="type:environment"></a-entity>
+
+	</a-entity>
 		
 		
 		
@@ -244,13 +383,14 @@
 </a-entity>
 
 <a-entity position="1 1 1" camera="active:true;userHeight:1.6" wasd-controls="easing:20.01;fly:true;acceleration:165" rotation="-38.80136368210983 -1208.0242228532563 0" look-controls="" aframe-injected="" data-aframe-inspector-original-camera="" data-aframe-inspector="default-camera"></a-entity>
-
+<!---->
 <a-entity id="desert2">
 	<a-entity id="snd" position="1996 19.795 943.357" scale="4158.082 -2.024 1783.906" geometry="" material="color:white;repeat:400 400;src:#sand;side:double;" n-box-collider="type:environment"></a-entity>
 	<a-entity id="snd-2" position="-2067.0669999999996 19.785 -910.6709999999999" scale="4158.082 -2.024 1783.906" geometry="" material="repeat:400 400;side:double;src:#sand" n-box-collider="type:environment"></a-entity>
 	<a-entity id="snd-3" position="-2162.059 19.785 873.873" scale="4158.082 -2.024 1783.906" geometry="" material="repeat:400 400;side:double;src:#sand" n-box-collider="type:environment"></a-entity>
 	<a-entity id="snd-4" position="2090.972 19.785 -840.5459999999999" scale="4158.082 -2.024 1783.906" geometry="" material="repeat:400 400;side:double;src:#sand" n-box-collider="type:environment"></a-entity>
 </a-entity>
+
 </a-entity>
 <!-- Match Gear VR controller if present, regardless of hand. -->
 <a-entity gearvr-controls></a-entity>
@@ -262,15 +402,9 @@
 </a-scene>
 
 <script>
-	AFRAME.registerComponent('alpha-test', {
-  dependencies: ['material'],
+var el = document.querySelector(".colliders");
 
-  init: function () {
-    var material = this.el.getObject3D('mesh').material;
-    material.alphaTest = 0.5;
-    material.needsUpdate = true;
-  }
-});
+el.setAttribute("visible",false);
 </script>
 
 
